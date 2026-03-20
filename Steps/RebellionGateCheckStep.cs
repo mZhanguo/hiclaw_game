@@ -46,6 +46,23 @@ namespace TangMo.Steps
 
             city.Unrest = maxUnrest;
 
+            // ── 预警机制（Unrest >= 0.55 黄灯）──
+            if (maxUnrest >= 0.55 && maxUnrest < 0.70)
+            {
+                var worstFamily = city.Families
+                    .OrderByDescending(f =>
+                        0.45 * (1 - f.LoyaltyToLord)
+                      + 0.35 * f.Grievance
+                      + 0.25 * f.GetEffectiveDominance(city.InstitutionPower))
+                    .First();
+
+                string warning = maxUnrest >= 0.65
+                    ? $"⚠️⚠️ {city.Name} 局势紧张！{worstFamily.Name}不满加剧 (Unrest={maxUnrest:F2})，叛乱近在咫尺"
+                    : $"⚠️ {city.Name} 暗流涌动，{worstFamily.Name}心怀异志 (Unrest={maxUnrest:F2})";
+
+                world.Log(warning);
+            }
+
             // ── 叛乱触发判定 ──
             double threshold = 0.70 * world.RevoltThreshold;
 
