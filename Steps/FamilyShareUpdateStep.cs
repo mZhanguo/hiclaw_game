@@ -59,6 +59,22 @@ namespace TangMo.Steps
                     family.Popularity = Math.Min(1.0, family.Popularity + 0.002);
                 }
 
+                // ── 非专业份额自然衰减 ──
+                // 军事家族的经济份额衰减（不善经营）
+                if (family.Type.HasFlag(FamilyType.MilitaryClan) && !family.Type.HasFlag(FamilyType.MerchantClan))
+                    family.EconShare = Math.Max(0, family.EconShare - 0.003);
+
+                // 非军事家族的武力份额衰减（私兵维护成本高）
+                if (!family.Type.HasFlag(FamilyType.MilitaryClan))
+                    family.Militia = Math.Max(0, family.Militia - 0.002);
+
+                // 非士绅/宗教/乡老家族的民意份额衰减（缺乏民众基础）
+                bool hasPopBase = family.Type.HasFlag(FamilyType.GentryClan)
+                               || family.Type.HasFlag(FamilyType.ReligiousClan)
+                               || family.Type.HasFlag(FamilyType.LocalElderClan);
+                if (!hasPopBase)
+                    family.Popularity = Math.Max(0, family.Popularity - 0.003);
+
                 // ── LoyaltyToLord 更新 ──
                 double loyaltyDelta = 0;
 
