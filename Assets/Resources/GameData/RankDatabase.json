@@ -1,0 +1,149 @@
+{
+  "Ranks": [
+    {
+      "Rank": "Candidate",
+      "DisplayName": "候补进士",
+      "Description": "刚中进士，等待吏部铨选授官。人微言轻，需在京城打点关系，争取一个好去处。",
+      "Grade": 9,
+      "IsFromGrade": true,
+      "BonusActionPoints": 0,
+      "BonusGoldPerTurn": 5,
+      "BonusInfluence": 0,
+      "PromotionRequirements": [
+        { "Attribute": "Intellect", "Value": 10 },
+        { "Attribute": "Charisma", "Value": 5 }
+      ],
+      "RequiredReputation": 10,
+      "RequiredInfluence": 5,
+      "MinTurnsAtRank": 2,
+      "ImpeachmentBaseChance": 0.02,
+      "RankSpecificCards": [],
+      "PromotionPaths": ["CountyMagistrate"]
+    },
+    {
+      "Rank": "CountyMagistrate",
+      "DisplayName": "正七品 县令",
+      "Description": "一县之主，管辖万民。亲民官之首，需断案、收税、赈灾、兴修，一方百姓的父母官。官小责重，正是磨砺之时。",
+      "Grade": 7,
+      "IsFromGrade": false,
+      "BonusActionPoints": 0,
+      "BonusGoldPerTurn": 15,
+      "BonusInfluence": 5,
+      "PromotionRequirements": [
+        { "Attribute": "Intellect", "Value": 25 },
+        { "Attribute": "Charisma", "Value": 20 },
+        { "Attribute": "Reputation", "Value": 30 }
+      ],
+      "RequiredReputation": 30,
+      "RequiredInfluence": 20,
+      "MinTurnsAtRank": 5,
+      "ImpeachmentBaseChance": 0.05,
+      "RankSpecificCards": ["card_gov_judge_001", "card_gov_tax_004", "card_gov_road_003"],
+      "PromotionPaths": ["Prefect"]
+    },
+    {
+      "Rank": "Prefect",
+      "DisplayName": "从四品 州刺史",
+      "Description": "一州之长，统辖数县。地方大员，掌管一方军政民政。需平衡各方势力，上通朝廷下安黎民。位高权重，也是政敌觊觎之位。",
+      "Grade": 4,
+      "IsFromGrade": true,
+      "BonusActionPoints": 1,
+      "BonusGoldPerTurn": 30,
+      "BonusInfluence": 15,
+      "PromotionRequirements": [
+        { "Attribute": "Intellect", "Value": 40 },
+        { "Attribute": "Charisma", "Value": 35 },
+        { "Attribute": "Scheming", "Value": 25 },
+        { "Attribute": "Reputation", "Value": 50 }
+      ],
+      "RequiredReputation": 50,
+      "RequiredInfluence": 40,
+      "MinTurnsAtRank": 6,
+      "ImpeachmentBaseChance": 0.08,
+      "RankSpecificCards": [],
+      "PromotionPaths": ["ViceMinister", "MilitaryGovernor"]
+    },
+    {
+      "Rank": "ViceMinister",
+      "DisplayName": "正四品 侍郎",
+      "Description": "六部侍郎，中央副职。踏入朝廷核心圈层，参与国家大政。朝堂之上派系林立，步步惊心。需在改革与保守之间找到生存之道。",
+      "Grade": 4,
+      "IsFromGrade": false,
+      "BonusActionPoints": 1,
+      "BonusGoldPerTurn": 50,
+      "BonusInfluence": 30,
+      "PromotionRequirements": [
+        { "Attribute": "Intellect", "Value": 55 },
+        { "Attribute": "Charisma", "Value": 45 },
+        { "Attribute": "Scheming", "Value": 40 },
+        { "Attribute": "Reputation", "Value": 65 }
+      ],
+      "RequiredReputation": 65,
+      "RequiredInfluence": 55,
+      "MinTurnsAtRank": 6,
+      "ImpeachmentBaseChance": 0.1,
+      "RankSpecificCards": [],
+      "PromotionPaths": ["Minister"]
+    },
+    {
+      "Rank": "Minister",
+      "DisplayName": "正三品 尚书",
+      "Description": "六部主官，掌管国家一方面政务。朝堂上举足轻重的实权人物，距宰相仅一步之遥。但这一步，往往是最难迈过的深渊。",
+      "Grade": 3,
+      "IsFromGrade": false,
+      "BonusActionPoints": 2,
+      "BonusGoldPerTurn": 80,
+      "BonusInfluence": 50,
+      "PromotionRequirements": [
+        { "Attribute": "Intellect", "Value": 70 },
+        { "Attribute": "Charisma", "Value": 60 },
+        { "Attribute": "Scheming", "Value": 55 },
+        { "Attribute": "Reputation", "Value": 80 }
+      ],
+      "RequiredReputation": 80,
+      "RequiredInfluence": 70,
+      "MinTurnsAtRank": 8,
+      "ImpeachmentBaseChance": 0.12,
+      "RankSpecificCards": [],
+      "PromotionPaths": ["GrandCouncilor"]
+    },
+    {
+      "Rank": "MilitaryGovernor",
+      "DisplayName": "从二品 节度使",
+      "Description": "手握数州军政大权的封疆大吏。武官路线的巅峰，拥兵自重，权倾一方。但功高震主，稍有不慎便是抄家灭族之祸。",
+      "Grade": 2,
+      "IsFromGrade": true,
+      "BonusActionPoints": 2,
+      "BonusGoldPerTurn": 100,
+      "BonusInfluence": 60,
+      "PromotionRequirements": [
+        { "Attribute": "Martial", "Value": 65 },
+        { "Attribute": "Scheming", "Value": 50 },
+        { "Attribute": "Reputation", "Value": 75 }
+      ],
+      "RequiredReputation": 75,
+      "RequiredInfluence": 65,
+      "MinTurnsAtRank": 8,
+      "ImpeachmentBaseChance": 0.15,
+      "RankSpecificCards": [],
+      "PromotionPaths": ["GrandCouncilor"]
+    },
+    {
+      "Rank": "GrandCouncilor",
+      "DisplayName": "正二品 宰相",
+      "Description": "一人之下万人之上，辅佐天子、总理万机。位极人臣的终极目标。此位无需再升，但需时刻提防——高处不胜寒，坠落便是粉身碎骨。",
+      "Grade": 2,
+      "IsFromGrade": false,
+      "BonusActionPoints": 3,
+      "BonusGoldPerTurn": 150,
+      "BonusInfluence": 100,
+      "PromotionRequirements": [],
+      "RequiredReputation": 0,
+      "RequiredInfluence": 0,
+      "MinTurnsAtRank": 0,
+      "ImpeachmentBaseChance": 0.2,
+      "RankSpecificCards": [],
+      "PromotionPaths": []
+    }
+  ]
+}
