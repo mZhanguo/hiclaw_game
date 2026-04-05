@@ -6,6 +6,7 @@
       "Description": "本县一桩命案，嫌犯乃城中豪绅之子。苦主跪伏堂下，泣不成声。两旁衙役执杖以待，堂外围观百姓议论纷纷。此案该如何审理？",
       "Type": "Decision",
       "Rarity": "Common",
+      "Repeatable": false,
       "MinTurn": 1,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -22,12 +23,12 @@
           "RequiredValue": 0,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Charisma", "Value": 3 }
+            { "Attribute": "Charisma", "Value": 5 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["judge_fair"],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -15, "TrustDelta": -5 },
+            { "NpcId": "npc_gentry", "FavorDelta": -15, "TrustDelta": -3 },
             { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 10 }
           ]
         },
@@ -43,8 +44,8 @@
           "FollowUpCardId": "",
           "SetFlags": ["judge_corrupt"],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 20, "TrustDelta": 10 },
-            { "NpcId": "npc_censor", "FavorDelta": -10, "TrustDelta": -15 }
+            { "NpcId": "npc_gentry", "FavorDelta": 20, "TrustDelta": 8 },
+            { "NpcId": "npc_censor", "FavorDelta": -10, "TrustDelta": -8 }
           ]
         },
         {
@@ -59,7 +60,7 @@
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -8 }
+            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -4 }
           ]
         }
       ]
@@ -70,6 +71,7 @@
       "Description": "连日暴雨，河堤溃决，县中数百户受灾。灾民涌入县城，粮仓告急，疫病隐患重重。赈灾刻不容缓，但府库银两有限……",
       "Type": "Crisis",
       "Rarity": "Uncommon",
+      "Repeatable": true,
       "MinTurn": 3,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -86,7 +88,7 @@
           "RequiredValue": 0,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 12 },
-            { "Attribute": "Charisma", "Value": 5 }
+            { "Attribute": "Charisma", "Value": 6 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["disaster_relief_full"],
@@ -102,6 +104,7 @@
           "RequiredValue": 10,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 3 },
             { "Attribute": "Scheming", "Value": 3 }
           ],
           "FollowUpCardId": "",
@@ -133,6 +136,7 @@
       "Description": "县中通往州府的官道年久失修，商旅绕行，市集萧条。主簿呈上修路方案，需耗费大量人力银两。修还是不修？",
       "Type": "Decision",
       "Rarity": "Common",
+      "Repeatable": false,
       "MinTurn": 2,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -149,7 +153,8 @@
           "RequiredValue": 5,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": -3 },
-            { "Attribute": "Intellect", "Value": 5 }
+            { "Attribute": "Intellect", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "card_gov_road_result_003a",
           "SetFlags": ["road_construction"],
@@ -165,7 +170,7 @@
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 8 },
             { "Attribute": "Intellect", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 3 }
+            { "Attribute": "Charisma", "Value": 5 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["road_construction", "work_relief"],
@@ -182,6 +187,7 @@
       "Description": "夏税征收在即。今年收成不好，百姓手头拮据。完不成税额则考评受损，但强征又恐激起民变……",
       "Type": "Decision",
       "Rarity": "Common",
+      "Repeatable": true,
       "MinTurn": 1,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -197,7 +203,8 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 2 }
+            { "Attribute": "Reputation", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 1 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -215,8 +222,8 @@
           "FollowUpCardId": "",
           "SetFlags": ["tax_corrupt"],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -10 },
-            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": -5 }
+            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -5 },
+            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": -3 }
           ]
         },
         {
@@ -231,7 +238,7 @@
           "FollowUpCardId": "",
           "SetFlags": ["tax_relief"],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -10, "TrustDelta": -5 },
+            { "NpcId": "npc_governor", "FavorDelta": -10, "TrustDelta": -3 },
             { "NpcId": "npc_abbot", "FavorDelta": 5, "TrustDelta": 5 }
           ]
         }
@@ -243,6 +250,7 @@
       "Description": "县丞提议在上游修建水渠，引水灌溉良田。工程浩大，但若成功可保本县数年丰收。只是此举需占用豪绅王家的部分田地……",
       "Type": "Decision",
       "Rarity": "Uncommon",
+      "Repeatable": false,
       "MinTurn": 4,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -260,12 +268,13 @@
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 10 },
             { "Attribute": "Intellect", "Value": 5 },
-            { "Attribute": "Martial", "Value": 2 }
+            { "Attribute": "Martial", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 4 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["water_project"],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -25, "TrustDelta": -15 },
+            { "NpcId": "npc_gentry", "FavorDelta": -25, "TrustDelta": -8 },
             { "NpcId": "npc_governor", "FavorDelta": 10, "TrustDelta": 8 }
           ]
         },
@@ -277,7 +286,7 @@
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 5 },
             { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            { "Attribute": "Charisma", "Value": 3 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["water_project_partial"],
@@ -297,7 +306,7 @@
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": -3, "TrustDelta": -3 }
+            { "NpcId": "npc_deputy", "FavorDelta": -3, "TrustDelta": -2 }
           ]
         }
       ]
@@ -308,6 +317,7 @@
       "Description": "刺史大人途经本县，借宿驿站。这是一个绝佳的巴结机会。县丞提醒你：刺史爱诗词、好美酒，但最忌阿谀奉承之辈……",
       "Type": "Opportunity",
       "Rarity": "Uncommon",
+      "Repeatable": false,
       "MinTurn": 2,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -323,7 +333,7 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 6 },
             { "Attribute": "Reputation", "Value": 5 }
           ],
           "FollowUpCardId": "",
@@ -338,7 +348,7 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 3 }
+            { "Attribute": "Charisma", "Value": 4 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -352,7 +362,8 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 }
+            { "Attribute": "Reputation", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -369,6 +380,7 @@
       "Description": "本地文人举办诗会，邀请你参加。席间有数位落第举子和退隐名士。结交文人可提升名望，也可能获得有用的情报……",
       "Type": "Opportunity",
       "Rarity": "Common",
+      "Repeatable": true,
       "MinTurn": 1,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -399,7 +411,7 @@
           "RequiredValue": 8,
           "Modifiers": [
             { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 1 }
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["intel_gathered"],
@@ -413,6 +425,7 @@
       "Description": "豪绅王家派人来府上提亲，欲将其女许配给你做续弦。王家在本县势力深厚，此亲若结，地方上的事好办许多。但此举也意味着与王家利益深度绑定……",
       "Type": "Decision",
       "Rarity": "Rare",
+      "Repeatable": false,
       "MinTurn": 5,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -428,14 +441,14 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 4 },
             { "Attribute": "Scheming", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["already_married", "gentry_alliance"],
           "RelationshipEffects": [
             { "NpcId": "npc_gentry", "FavorDelta": 30, "TrustDelta": 20 },
-            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -5 }
+            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -3 }
           ]
         },
         {
@@ -444,12 +457,13 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 }
+            { "Attribute": "Reputation", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -15, "TrustDelta": -10 }
+            { "NpcId": "npc_gentry", "FavorDelta": -15, "TrustDelta": -5 }
           ]
         }
       ]
@@ -460,6 +474,7 @@
       "Description": "你的幕僚收集到邻县县令赵谦私设关卡、盘剥商旅的证据。若上报弹劾，可能搬走一个政敌；但赵谦也握有你的一些把柄……",
       "Type": "Decision",
       "Rarity": "Rare",
+      "Repeatable": false,
       "MinTurn": 6,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -476,12 +491,13 @@
           "RequiredValue": 12,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Scheming", "Value": 5 }
+            { "Attribute": "Scheming", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 3 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["impeached_zhao"],
           "RelationshipEffects": [
-            { "NpcId": "npc_neighbor", "FavorDelta": -30, "TrustDelta": -30 },
+            { "NpcId": "npc_neighbor", "FavorDelta": -30, "TrustDelta": -15 },
             { "NpcId": "npc_censor", "FavorDelta": 10, "TrustDelta": 8 },
             { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 5 }
           ]
@@ -498,7 +514,7 @@
           "FollowUpCardId": "",
           "SetFlags": ["zhao_deal"],
           "RelationshipEffects": [
-            { "NpcId": "npc_neighbor", "FavorDelta": 5, "TrustDelta": -5 }
+            { "NpcId": "npc_neighbor", "FavorDelta": 5, "TrustDelta": -3 }
           ]
         },
         {
@@ -521,6 +537,7 @@
       "Description": "数百流民聚众闹事，已有人竖旗造反。县兵不过百人，若处置不当恐酿成大祸。是强力镇压还是安抚招降？",
       "Type": "Crisis",
       "Rarity": "Rare",
+      "Repeatable": false,
       "MinTurn": 5,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -575,7 +592,7 @@
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -10, "TrustDelta": -10 }
+            { "NpcId": "npc_governor", "FavorDelta": -10, "TrustDelta": -5 }
           ]
         }
       ]
@@ -586,6 +603,7 @@
       "Description": "入夏以来滴雨未下，庄稼枯死大半。更糟的是，蝗虫铺天盖地而来。百姓惶恐不安，有人说这是天罚……",
       "Type": "Crisis",
       "Rarity": "Uncommon",
+      "Repeatable": true,
       "MinTurn": 3,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -603,7 +621,8 @@
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 8 },
             { "Attribute": "Health", "Value": -5 },
-            { "Attribute": "Martial", "Value": 3 }
+            { "Attribute": "Martial", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 4 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["locust_fought"],
@@ -618,7 +637,7 @@
           "RequiredValue": 10,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 3 }
+            { "Attribute": "Charisma", "Value": 4 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -633,7 +652,8 @@
           "RequiredValue": 12,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 6 },
-            { "Attribute": "Intellect", "Value": 3 }
+            { "Attribute": "Intellect", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["grain_purchased"],
@@ -649,6 +669,7 @@
       "Description": "朝廷监察御史巡视到本县，要查阅账簿、巡视牢狱、走访民间。你的政绩和廉洁将接受严格考验……",
       "Type": "Event",
       "Rarity": "Uncommon",
+      "Repeatable": true,
       "MinTurn": 4,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -664,7 +685,8 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 }
+            { "Attribute": "Reputation", "Value": 8 },
+            { "Attribute": "Charisma", "Value": 3 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["inspection_clean"],
@@ -684,7 +706,7 @@
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -10 }
+            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -5 }
           ]
         },
         {
@@ -693,13 +715,13 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 3 },
             { "Attribute": "Scheming", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": -3 }
+            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": -2 }
           ]
         }
       ]
@@ -710,6 +732,7 @@
       "Description": "朝廷派你监督本州科举。考场中有人作弊被抓，而此人正是刺史大人的侄子。如何处理这烫手山芋？",
       "Type": "Decision",
       "Rarity": "Rare",
+      "Repeatable": false,
       "MinTurn": 6,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -726,12 +749,13 @@
           "RequiredValue": 0,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 15 },
-            { "Attribute": "Intellect", "Value": 3 }
+            { "Attribute": "Intellect", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 5 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["exam_fair"],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -20, "TrustDelta": -10 },
+            { "NpcId": "npc_governor", "FavorDelta": -20, "TrustDelta": -5 },
             { "NpcId": "npc_censor", "FavorDelta": 15, "TrustDelta": 15 }
           ]
         },
@@ -748,7 +772,7 @@
           "SetFlags": ["exam_corrupt"],
           "RelationshipEffects": [
             { "NpcId": "npc_governor", "FavorDelta": 15, "TrustDelta": 5 },
-            { "NpcId": "npc_censor", "FavorDelta": -15, "TrustDelta": -20 }
+            { "NpcId": "npc_censor", "FavorDelta": -15, "TrustDelta": -10 }
           ]
         }
       ]
@@ -759,6 +783,7 @@
       "Description": "城中突发瘟疫，已有数十人染病身亡。药铺坐地起价，百姓怨声载道。需要果断决策遏制疫情蔓延……",
       "Type": "Crisis",
       "Rarity": "Rare",
+      "Repeatable": false,
       "MinTurn": 4,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -776,12 +801,13 @@
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 10 },
             { "Attribute": "Martial", "Value": 3 },
-            { "Attribute": "Health", "Value": -8 }
+            { "Attribute": "Health", "Value": -8 },
+            { "Attribute": "Charisma", "Value": 5 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["plague_contained"],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -10, "TrustDelta": -5 },
+            { "NpcId": "npc_gentry", "FavorDelta": -10, "TrustDelta": -3 },
             { "NpcId": "npc_abbot", "FavorDelta": 10, "TrustDelta": 10 }
           ]
         },
@@ -792,7 +818,7 @@
           "RequiredValue": 10,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 3 }
+            { "Attribute": "Charisma", "Value": 4 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -812,7 +838,7 @@
           "FollowUpCardId": "",
           "SetFlags": ["plague_covered_up"],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": -20, "TrustDelta": -25 }
+            { "NpcId": "npc_censor", "FavorDelta": -20, "TrustDelta": -12 }
           ]
         }
       ]
@@ -823,6 +849,7 @@
       "Description": "县丞老周私下求见，言辞恳切：'大人，主簿近来行为可疑，暗中与王家过从甚密，恐怕有不轨之心……'",
       "Type": "Character",
       "Rarity": "Common",
+      "Repeatable": false,
       "MinTurn": 3,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -838,13 +865,14 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 3 }
+            { "Attribute": "Scheming", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["investigating_registrar"],
           "RelationshipEffects": [
             { "NpcId": "npc_deputy", "FavorDelta": 10, "TrustDelta": 10 },
-            { "NpcId": "npc_registrar", "FavorDelta": 0, "TrustDelta": -5 }
+            { "NpcId": "npc_registrar", "FavorDelta": 0, "TrustDelta": -3 }
           ]
         },
         {
@@ -853,12 +881,12 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 2 }
+            { "Attribute": "Charisma", "Value": 3 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": -5, "TrustDelta": -8 },
+            { "NpcId": "npc_deputy", "FavorDelta": -5, "TrustDelta": -4 },
             { "NpcId": "npc_registrar", "FavorDelta": 3, "TrustDelta": 0 }
           ]
         },
@@ -874,8 +902,8 @@
           "FollowUpCardId": "",
           "SetFlags": ["deputy_betrayed"],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": -20, "TrustDelta": -25 },
-            { "NpcId": "npc_registrar", "FavorDelta": 10, "TrustDelta": -10 }
+            { "NpcId": "npc_deputy", "FavorDelta": -20, "TrustDelta": -12 },
+            { "NpcId": "npc_registrar", "FavorDelta": 10, "TrustDelta": -5 }
           ]
         }
       ]
@@ -886,6 +914,7 @@
       "Description": "近来有一伙山匪盘踞在县境山中，劫掠过往商旅。商户联名请愿剿匪，但县兵战力有限，山势险峻……",
       "Type": "Decision",
       "Rarity": "Common",
+      "Repeatable": true,
       "MinTurn": 2,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -903,7 +932,8 @@
           "Modifiers": [
             { "Attribute": "Martial", "Value": 5 },
             { "Attribute": "Reputation", "Value": 10 },
-            { "Attribute": "Health", "Value": -8 }
+            { "Attribute": "Health", "Value": -8 },
+            { "Attribute": "Charisma", "Value": 3 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["bandit_cleared"],
@@ -936,7 +966,7 @@
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -5 }
+            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -3 }
           ]
         }
       ]
@@ -947,6 +977,7 @@
       "Description": "净慧寺住持法明大师邀你参加寺庙重修落成典礼，暗示希望你能带头捐赠。寺庙在百姓中影响力极大……",
       "Type": "Opportunity",
       "Rarity": "Common",
+      "Repeatable": true,
       "MinTurn": 2,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -963,7 +994,7 @@
           "RequiredValue": 0,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 3 }
+            { "Attribute": "Charisma", "Value": 4 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["temple_donor"],
@@ -977,7 +1008,7 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 1 }
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -993,6 +1024,7 @@
       "Description": "县中无正规学堂，读书人稀少。兴办县学可育人才、扬文教，但需要持续投入银两和精力……",
       "Type": "Decision",
       "Rarity": "Uncommon",
+      "Repeatable": false,
       "MinTurn": 3,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -1010,7 +1042,7 @@
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 10 },
             { "Attribute": "Intellect", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 3 }
+            { "Attribute": "Charisma", "Value": 5 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["school_built"],
@@ -1026,7 +1058,8 @@
           "RequiredValue": 10,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 3 }
+            { "Attribute": "Intellect", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 3 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["school_built"],
@@ -1042,6 +1075,7 @@
       "Description": "深夜，一骑快马送来密旨：皇上命你暗中调查刺史大人是否有谋反迹象。此事若泄露，你将腹背受敌……",
       "Type": "Decision",
       "Rarity": "Epic",
+      "Repeatable": false,
       "MinTurn": 8,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -1102,6 +1136,7 @@
       "Description": "你发现邻县县令赵谦在背后散布谣言，说你贪赃枉法。消息已传到刺史耳中。必须尽快应对……",
       "Type": "Crisis",
       "Rarity": "Uncommon",
+      "Repeatable": false,
       "MinTurn": 4,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -1118,13 +1153,14 @@
           "RequiredValue": 10,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 3 }
+            { "Attribute": "Intellect", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
             { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 5 },
-            { "NpcId": "npc_neighbor", "FavorDelta": -5, "TrustDelta": -5 }
+            { "NpcId": "npc_neighbor", "FavorDelta": -5, "TrustDelta": -3 }
           ]
         },
         {
@@ -1139,7 +1175,7 @@
           "FollowUpCardId": "",
           "SetFlags": ["counter_attack_zhao"],
           "RelationshipEffects": [
-            { "NpcId": "npc_neighbor", "FavorDelta": -20, "TrustDelta": -15 }
+            { "NpcId": "npc_neighbor", "FavorDelta": -20, "TrustDelta": -8 }
           ]
         },
         {
@@ -1148,7 +1184,7 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 4 },
             { "Attribute": "Reputation", "Value": 3 }
           ],
           "FollowUpCardId": "",
@@ -1165,6 +1201,7 @@
       "Description": "清查粮仓时发现，账面上有粮五千石，实际只剩三千石。主簿支支吾吾说不清楚。这亏空到底是谁造成的？",
       "Type": "Decision",
       "Rarity": "Uncommon",
+      "Repeatable": false,
       "MinTurn": 3,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -1181,12 +1218,13 @@
           "RequiredValue": 10,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Scheming", "Value": 3 }
+            { "Attribute": "Scheming", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 3 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["granary_investigated"],
           "RelationshipEffects": [
-            { "NpcId": "npc_registrar", "FavorDelta": -15, "TrustDelta": -10 },
+            { "NpcId": "npc_registrar", "FavorDelta": -15, "TrustDelta": -5 },
             { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 8 }
           ]
         },
@@ -1212,6 +1250,7 @@
       "Description": "朝中改革派与保守派争斗日趋激烈。刺史明确支持改革派，而你的恩师却是保守派重臣。两边都在拉拢你表态……",
       "Type": "Decision",
       "Rarity": "Epic",
+      "Repeatable": false,
       "MinTurn": 8,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -1228,7 +1267,7 @@
           "RequiredValue": 0,
           "Modifiers": [
             { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": -3 }
+            { "Attribute": "Charisma", "Value": -2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["faction_reform"],
@@ -1242,12 +1281,13 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 5 }
+            { "Attribute": "Scheming", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 2 }
           ],
           "FollowUpCardId": "",
           "SetFlags": ["faction_conservative"],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -15, "TrustDelta": -10 }
+            { "NpcId": "npc_governor", "FavorDelta": -15, "TrustDelta": -5 }
           ]
         },
         {
@@ -1261,7 +1301,7 @@
           "FollowUpCardId": "",
           "SetFlags": ["faction_neutral"],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -3 }
+            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -2 }
           ]
         }
       ]
@@ -1272,6 +1312,7 @@
       "Description": "深夜，一名黑衣人潜入你的卧房。幸好你有所警觉，刺客行刺未遂跳窗而逃。是谁要取你性命？",
       "Type": "Crisis",
       "Rarity": "Epic",
+      "Repeatable": false,
       "MinTurn": 7,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -1328,6 +1369,7 @@
       "Description": "县中山民报告发现一处铜矿脉。若开采可充盈府库，但矿脉位于寺庙后山的风水宝地之上……",
       "Type": "Opportunity",
       "Rarity": "Rare",
+      "Repeatable": false,
       "MinTurn": 5,
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
@@ -1349,7 +1391,7 @@
           "FollowUpCardId": "",
           "SetFlags": ["mine_opened"],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": -25, "TrustDelta": -20 },
+            { "NpcId": "npc_abbot", "FavorDelta": -25, "TrustDelta": -10 },
             { "NpcId": "npc_governor", "FavorDelta": 8, "TrustDelta": 5 }
           ]
         },
@@ -1379,6 +1421,1075 @@
           ],
           "FollowUpCardId": "",
           "SetFlags": ["mine_secret"],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_bridge_025",
+      "Title": "修缮桥梁",
+      "Description": "县中唯一的石桥年久失修，雨季随时可能垮塌。桥断则南北交通中断，但修桥需耗费大量银两……",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 1,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "拨银修桥，保障民生",
+          "Tooltip": "利民之举",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 6 },
+            { "Attribute": "Charisma", "Value": 4 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "动员百姓义务修缮",
+          "Tooltip": "省钱但百姓有怨言",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 5,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": -2 },
+            { "Attribute": "Charisma", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_granary_new_026",
+      "Title": "扩建粮仓",
+      "Description": "今年风调雨顺，秋收在望。县丞建议趁此时机扩建粮仓，以备不时之需……",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 2,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "大兴土木，新建三座粮仓",
+          "Tooltip": "未雨绸缪",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 10,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 5 },
+            { "Attribute": "Intellect", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_registrar", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "修缮旧仓即可",
+          "Tooltip": "量入为出",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 1 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_market_027",
+      "Title": "整顿市集",
+      "Description": "县中市集混乱，缺斤少两、以次充好之事屡见不鲜。商户之间也常因摊位起纠纷。需要出手整顿……",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 1,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "制定市令，严格执法",
+          "Tooltip": "建立秩序",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 8,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 5 },
+            { "Attribute": "Intellect", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_gentry", "FavorDelta": -3, "TrustDelta": 0 }
+          ]
+        },
+        {
+          "ChoiceText": "让豪绅出面调停",
+          "Tooltip": "借力但让渡权力",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 1 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_gentry", "FavorDelta": 5, "TrustDelta": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_orphan_028",
+      "Title": "收容孤寡",
+      "Description": "县中孤寡老人和流浪孤儿日渐增多，街头乞讨者随处可见。有人建议设立养济院收容安置……",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": false,
+      "MinTurn": 2,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "设立养济院，拨银安置",
+          "Tooltip": "仁政爱民",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 8,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 8 },
+            { "Attribute": "Charisma", "Value": 6 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": ["orphanage_built"],
+          "RelationshipEffects": [
+            { "NpcId": "npc_abbot", "FavorDelta": 10, "TrustDelta": 8 },
+            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": 3 }
+          ]
+        },
+        {
+          "ChoiceText": "交由寺庙代管",
+          "Tooltip": "省力但不够到位",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_abbot", "FavorDelta": 8, "TrustDelta": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_medicine_029",
+      "Title": "施药济民",
+      "Description": "入冬后天寒地冻，不少百姓感染风寒却无钱求医。你是否愿意用官银购置药材，设点施药？",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 1,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "开设义诊，免费施药",
+          "Tooltip": "仁心仁术",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 6 },
+            { "Attribute": "Charisma", "Value": 5 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_abbot", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "鼓励药铺降价，给予税收优惠",
+          "Tooltip": "间接帮助",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 10,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 3 },
+            { "Attribute": "Intellect", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_gentry", "FavorDelta": 3, "TrustDelta": 2 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_patrol_030",
+      "Title": "夜巡治安",
+      "Description": "近来县城夜间盗窃案频发，百姓人心惶惶。是否要加强夜间巡逻？",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 1,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "亲自带队夜巡",
+          "Tooltip": "身先士卒，提升威望",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 5,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 5 },
+            { "Attribute": "Martial", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 4 },
+            { "Attribute": "Health", "Value": -3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "增派衙役，设置更夫",
+          "Tooltip": "常规手段",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_soc_feast_031",
+      "Title": "同僚宴饮",
+      "Description": "县丞周德厚邀你到家中小酌。席间气氛融洽，这是拉近关系的好机会……",
+      "Type": "Opportunity",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 1,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "推心置腹，畅谈志向",
+          "Tooltip": "加深了解",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 8,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 4 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_deputy", "FavorDelta": 10, "TrustDelta": 8 }
+          ]
+        },
+        {
+          "ChoiceText": "觥筹交错，不谈公事",
+          "Tooltip": "轻松愉快",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_soc_merchant_032",
+      "Title": "商人献礼",
+      "Description": "一位外地大商人求见，带来厚礼，希望在本县开设店铺并获得便利……",
+      "Type": "Opportunity",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 2,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "收礼办事，给予便利",
+          "Tooltip": "来者不拒",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Scheming", "Value": 2 },
+            { "Attribute": "Reputation", "Value": -3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_censor", "FavorDelta": -3, "TrustDelta": -3 }
+          ]
+        },
+        {
+          "ChoiceText": "退还厚礼，依法办理",
+          "Tooltip": "清正廉洁",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "收下礼物但不给特殊待遇",
+          "Tooltip": "两头不得罪",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 10,
+          "Modifiers": [
+            { "Attribute": "Scheming", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 1 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_soc_petition_033",
+      "Title": "百姓请愿",
+      "Description": "数十名百姓跪在县衙门前请愿，要求减轻徭役。领头的是一位白发苍苍的老者，声泪俱下……",
+      "Type": "Event",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 1,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "亲自接见，认真倾听",
+          "Tooltip": "爱民如子",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 5,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 5 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_deputy", "FavorDelta": 3, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "让县丞出面打发",
+          "Tooltip": "不想惹事",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": -2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_deputy", "FavorDelta": -3, "TrustDelta": -2 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_soc_scholar_034",
+      "Title": "名士来访",
+      "Description": "一位退隐京师的老翰林途经本县，慕名来访。他在朝中人脉甚广，若能结交，必有助益……",
+      "Type": "Opportunity",
+      "Rarity": "Uncommon",
+      "Repeatable": true,
+      "MinTurn": 3,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "设宴款待，虚心请教",
+          "Tooltip": "结交名士",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 12,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 5 },
+            { "Attribute": "Intellect", "Value": 3 },
+            { "Attribute": "Reputation", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 3 }
+          ]
+        },
+        {
+          "ChoiceText": "简单接待，公事公办",
+          "Tooltip": "不卑不亢",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_soc_gentry_feast_035",
+      "Title": "豪绅设宴",
+      "Description": "豪绅王守业设宴邀请全县官员，席间推杯换盏，觥筹交错。王家意在展示实力，暗中拉拢人心……",
+      "Type": "Opportunity",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 2,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "赴宴应酬，维持关系",
+          "Tooltip": "面子上过得去",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_gentry", "FavorDelta": 8, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "借故推辞，保持距离",
+          "Tooltip": "独善其身",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 1 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_gentry", "FavorDelta": -3, "TrustDelta": -2 },
+            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_evt_fire_036",
+      "Title": "集市大火",
+      "Description": "县城集市突发大火，火势蔓延迅速。数十家店铺受灾，浓烟滚滚，百姓四散奔逃……",
+      "Type": "Crisis",
+      "Rarity": "Uncommon",
+      "Repeatable": true,
+      "MinTurn": 2,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "亲临火场，指挥救灾",
+          "Tooltip": "身先士卒",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 5,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 8 },
+            { "Attribute": "Charisma", "Value": 5 },
+            { "Attribute": "Health", "Value": -5 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 5 },
+            { "NpcId": "npc_registrar", "FavorDelta": 3, "TrustDelta": 3 }
+          ]
+        },
+        {
+          "ChoiceText": "坐镇县衙，调度救援",
+          "Tooltip": "从容指挥",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 10,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 5 },
+            { "Attribute": "Intellect", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_evt_flood_037",
+      "Title": "秋汛泛滥",
+      "Description": "秋汛来势凶猛，河水暴涨，低洼处已有积水。堤坝吃紧，需要紧急加固……",
+      "Type": "Crisis",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 2,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "征调民夫，日夜加固堤坝",
+          "Tooltip": "防患于未然",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 5,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 6 },
+            { "Attribute": "Charisma", "Value": 4 },
+            { "Attribute": "Martial", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 3 }
+          ]
+        },
+        {
+          "ChoiceText": "疏散低洼处百姓",
+          "Tooltip": "安全第一",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 4 },
+            { "Attribute": "Charisma", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_abbot", "FavorDelta": 3, "TrustDelta": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_evt_rumor_038",
+      "Title": "流言蜚语",
+      "Description": "近来有流言说你与某女子有染，传得沸沸扬扬。虽是无中生有，但对你的名声已造成影响……",
+      "Type": "Event",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 3,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "公开澄清，以正视听",
+          "Tooltip": "正面应对",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 10,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": 3 }
+          ]
+        },
+        {
+          "ChoiceText": "不予理会，清者自清",
+          "Tooltip": "泰然处之",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": -2 },
+            { "Attribute": "Charisma", "Value": 1 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        },
+        {
+          "ChoiceText": "暗查造谣之人",
+          "Tooltip": "釜底抽薪",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 12,
+          "Modifiers": [
+            { "Attribute": "Scheming", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_census_039",
+      "Title": "户籍清查",
+      "Description": "朝廷下令清查户籍，核实人口。许多隐户和逃户藏匿于豪绅庄园之中，清查势必触动利益……",
+      "Type": "Decision",
+      "Rarity": "Uncommon",
+      "Repeatable": true,
+      "MinTurn": 3,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "严格清查，不留死角",
+          "Tooltip": "秉公执法",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 10,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 8 },
+            { "Attribute": "Charisma", "Value": 4 },
+            { "Attribute": "Intellect", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_gentry", "FavorDelta": -8, "TrustDelta": -3 },
+            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "走走过场，应付了事",
+          "Tooltip": "给豪绅面子",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": -3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_gentry", "FavorDelta": 5, "TrustDelta": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_province_tax_040",
+      "Title": "州府税赋",
+      "Description": "作为刺史，你需要决定辖区内各县的税赋分配。有些县富庶，有些县贫瘠，如何公平分配是门学问……",
+      "Type": "Decision",
+      "Rarity": "Uncommon",
+      "Repeatable": true,
+      "MinTurn": 6,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "按田亩多寡公平分摊",
+          "Tooltip": "公正之举",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 15,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 8 },
+            { "Attribute": "Intellect", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 5 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "照顾亲近之县，苛征疏远之县",
+          "Tooltip": "拉一派打一派",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 12,
+          "Modifiers": [
+            { "Attribute": "Scheming", "Value": 3 },
+            { "Attribute": "Reputation", "Value": -5 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_neighbor", "FavorDelta": -10, "TrustDelta": -5 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_military_041",
+      "Title": "练兵强军",
+      "Description": "辖区边境不太平，你决定整顿兵马，加强操练……",
+      "Type": "Decision",
+      "Rarity": "Uncommon",
+      "Repeatable": true,
+      "MinTurn": 5,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "亲自督练，赏罚分明",
+          "Tooltip": "提升军力",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 10,
+          "Modifiers": [
+            { "Attribute": "Martial", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 3 },
+            { "Attribute": "Reputation", "Value": 5 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_military", "FavorDelta": 10, "TrustDelta": 8 }
+          ]
+        },
+        {
+          "ChoiceText": "委派武将全权负责",
+          "Tooltip": "放权但省心",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Martial", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 1 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_military", "FavorDelta": 5, "TrustDelta": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_border_042",
+      "Title": "边境冲突",
+      "Description": "辖区边境与邻州发生领土纠纷，双方百姓已有摩擦。处理不好可能引发更大冲突……",
+      "Type": "Crisis",
+      "Rarity": "Rare",
+      "Repeatable": false,
+      "MinTurn": 6,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "亲赴边境，与对方协商",
+          "Tooltip": "和平解决",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 20,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 6 },
+            { "Attribute": "Reputation", "Value": 10 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": ["border_resolved"],
+          "RelationshipEffects": [
+            { "NpcId": "npc_governor", "FavorDelta": 10, "TrustDelta": 8 }
+          ]
+        },
+        {
+          "ChoiceText": "调兵示威，以势压人",
+          "Tooltip": "强硬路线",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 15,
+          "Modifiers": [
+            { "Attribute": "Martial", "Value": 5 },
+            { "Attribute": "Reputation", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_military", "FavorDelta": 8, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "上报朝廷，请旨定夺",
+          "Tooltip": "稳妥",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 1 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_soc_minister_043",
+      "Title": "朝中来客",
+      "Description": "一位侍郎大人微服私访，途经你的辖区。这是结交朝中高官的难得机会……",
+      "Type": "Opportunity",
+      "Rarity": "Rare",
+      "Repeatable": true,
+      "MinTurn": 7,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "盛情款待，汇报政绩",
+          "Tooltip": "给上级留下好印象",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 15,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 5 },
+            { "Attribute": "Reputation", "Value": 5 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "以本地特色菜肴招待",
+          "Tooltip": "朴实无华",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_soc_alliance_044",
+      "Title": "官场结盟",
+      "Description": "几位志同道合的同僚提议结成同盟，在朝中互相照应。结盟可以壮大声势，但也意味着被卷入更深的政治旋涡……",
+      "Type": "Decision",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 6,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "欣然加入，共进退",
+          "Tooltip": "结交盟友",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 15,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 5 },
+            { "Attribute": "Scheming", "Value": 3 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": ["alliance_formed"],
+          "RelationshipEffects": [
+            { "NpcId": "npc_deputy", "FavorDelta": 8, "TrustDelta": 8 },
+            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 5 }
+          ]
+        },
+        {
+          "ChoiceText": "婉言谢绝，独善其身",
+          "Tooltip": "保持独立",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 2 },
+            { "Attribute": "Charisma", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_evt_tribute_045",
+      "Title": "进贡朝廷",
+      "Description": "年底需要向朝廷进贡地方特产。贡品的选择和数量直接关系到朝廷对你的印象……",
+      "Type": "Event",
+      "Rarity": "Common",
+      "Repeatable": true,
+      "MinTurn": 4,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "精心准备，超额进贡",
+          "Tooltip": "讨好上级",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 3 },
+            { "Attribute": "Charisma", "Value": 2 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": [
+            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 3 }
+          ]
+        },
+        {
+          "ChoiceText": "按例进贡，不多不少",
+          "Tooltip": "中规中矩",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Charisma", "Value": 1 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_gov_road_result_003a",
+      "Title": "官道修成",
+      "Description": "经过数月辛劳，官道终于修缮完毕。商旅络绎不绝，市集日渐繁荣，百姓交口称赞……",
+      "Type": "Event",
+      "Rarity": "Common",
+      "Repeatable": false,
+      "MinTurn": 1,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": ["road_construction"],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "举办通路庆典",
+          "Tooltip": "与民同乐",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            { "Attribute": "Reputation", "Value": 5 },
+            { "Attribute": "Charisma", "Value": 4 }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
           "RelationshipEffects": []
         }
       ]

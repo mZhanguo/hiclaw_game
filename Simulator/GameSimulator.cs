@@ -127,6 +127,7 @@ namespace GuantuFucheng.Simulator
         public string Description { get; set; } = "";
         public string Type { get; set; } = "";
         public string Rarity { get; set; } = "";
+        public bool Repeatable { get; set; } = false;
         public int MinTurn { get; set; }
         public int MaxTurn { get; set; }
         public string MinRank { get; set; } = "";
@@ -465,7 +466,7 @@ namespace GuantuFucheng.Simulator
         {
             var avail = _cards.Where(c =>
             {
-                if (_usedCards.Contains(c.CardId)) return false;
+                if (_usedCards.Contains(c.CardId) && !c.Repeatable) return false;
                 if (turn < c.MinTurn) return false;
                 if (c.MaxTurn > 0 && turn > c.MaxTurn) return false;
                 var min = PE<OfficialRank>(c.MinRank);
@@ -596,9 +597,14 @@ namespace GuantuFucheng.Simulator
         {
             foreach (var rel in _run.Relationships)
             {
-                if (rel.Favor > 0) rel.Favor = Math.Max(0, rel.Favor - 1);
-                else if (rel.Favor < 0) rel.Favor = Math.Min(0, rel.Favor + 1);
-                if (turn % 3 == 0)
+                // 好感每2回合衰减1（原来每回合衰减1）
+                if (turn % 2 == 0)
+                {
+                    if (rel.Favor > 0) rel.Favor = Math.Max(0, rel.Favor - 1);
+                    else if (rel.Favor < 0) rel.Favor = Math.Min(0, rel.Favor + 1);
+                }
+                // 信任每5回合衰减1（原来每3回合衰减1）
+                if (turn % 5 == 0)
                 {
                     if (rel.Trust > 0) rel.Trust = Math.Max(0, rel.Trust - 1);
                     else if (rel.Trust < 0) rel.Trust = Math.Min(0, rel.Trust + 1);
