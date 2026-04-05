@@ -437,7 +437,7 @@
       "BetrayalWeight": 0.5
     },
     {
-      "NpcId": "npc_general",
+      "NpcId": "npc_qinhu",
       "DisplayName": "折冲都尉 秦虎",
       "Biography": "驻扎本州的武将，出身行伍，战功赫赫。为人豪爽直率，看不起文官的弯弯绕绕。手握兵权，在地方上说一不二。与他交好可保平安，但武将干政为朝廷大忌。",
       "Faction": "Military",

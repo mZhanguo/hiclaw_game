@@ -3444,7 +3444,7 @@
           "SetFlags": [],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_military",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 10,
               "TrustDelta": 8
             }
@@ -3469,7 +3469,7 @@
           "SetFlags": [],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_military",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 5,
               "TrustDelta": 3
             }
@@ -3539,7 +3539,7 @@
           "SetFlags": [],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_military",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 8,
               "TrustDelta": 5
             }
@@ -4461,7 +4461,7 @@
           ],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 15,
               "TrustDelta": 10
             }
@@ -4488,7 +4488,7 @@
           ],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 8,
               "TrustDelta": 5
             }
@@ -4515,7 +4515,7 @@
           ],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": -5,
               "TrustDelta": -8
             }
@@ -4742,7 +4742,7 @@
           ],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 12,
               "TrustDelta": 8
             }
@@ -4769,7 +4769,7 @@
           ],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": -10,
               "TrustDelta": -15
             }
@@ -4796,7 +4796,7 @@
           ],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": -5,
               "TrustDelta": -3
             }
@@ -5870,7 +5870,7 @@
           ],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 25,
               "TrustDelta": 20
             }
@@ -5906,7 +5906,7 @@
               "TrustDelta": -40
             },
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": -30,
               "TrustDelta": -40
             }
@@ -6054,7 +6054,7 @@
               "TrustDelta": 15
             },
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": -10,
               "TrustDelta": -8
             }
@@ -6081,7 +6081,7 @@
           ],
           "RelationshipEffects": [
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 10,
               "TrustDelta": 5
             }
@@ -6117,7 +6117,7 @@
               "TrustDelta": -30
             },
             {
-              "NpcId": "npc_general",
+              "NpcId": "npc_qinhu",
               "FavorDelta": 15,
               "TrustDelta": 10
             }
