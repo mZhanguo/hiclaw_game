@@ -30,3 +30,7 @@ sysinfo.txt
 *.app
 .DS_Store
 Thumbs.db
+
+# Simulator build
+Simulator/bin/
+Simulator/obj/
