@@ -22,14 +22,30 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["judge_fair"],
+          "SetFlags": [
+            "judge_fair"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -15, "TrustDelta": -3 },
-            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 10 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -15,
+              "TrustDelta": -3
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 5,
+              "TrustDelta": 10
+            }
           ]
         },
         {
@@ -38,14 +54,30 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 5,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -10 },
-            { "Attribute": "Scheming", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": -10
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["judge_corrupt"],
+          "SetFlags": [
+            "judge_corrupt"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 20, "TrustDelta": 8 },
-            { "NpcId": "npc_censor", "FavorDelta": -10, "TrustDelta": -8 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 20,
+              "TrustDelta": 8
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -10,
+              "TrustDelta": -8
+            }
           ]
         },
         {
@@ -54,13 +86,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -3 },
-            { "Attribute": "Intellect", "Value": -1 }
+            {
+              "Attribute": "Reputation",
+              "Value": -3
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": -1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -4 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -5,
+              "TrustDelta": -4
+            }
           ]
         }
       ]
@@ -87,14 +129,30 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 12 },
-            { "Attribute": "Charisma", "Value": 6 }
+            {
+              "Attribute": "Reputation",
+              "Value": 12
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 6
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["disaster_relief_full"],
+          "SetFlags": [
+            "disaster_relief_full"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_registrar", "FavorDelta": 5, "TrustDelta": 5 },
-            { "NpcId": "npc_abbot", "FavorDelta": 10, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -103,14 +161,29 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 3 },
-            { "Attribute": "Scheming", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["owe_gentry_favor"],
+          "SetFlags": [
+            "owe_gentry_favor"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 10, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -119,13 +192,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -2 },
-            { "Attribute": "Intellect", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": -2
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -3, "TrustDelta": 0 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -3,
+              "TrustDelta": 0
+            }
           ]
         }
       ]
@@ -152,14 +235,29 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 5,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -3 },
-            { "Attribute": "Intellect", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": -3
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "card_gov_road_result_003a",
-          "SetFlags": ["road_construction"],
+          "SetFlags": [
+            "road_construction"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_registrar", "FavorDelta": 5, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 5,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -168,15 +266,35 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Intellect", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["road_construction", "work_relief"],
+          "SetFlags": [
+            "road_construction",
+            "work_relief"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 5 },
-            { "NpcId": "npc_registrar", "FavorDelta": 8, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
           ]
         }
       ]
@@ -203,8 +321,14 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Reputation",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -216,14 +340,30 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -8 },
-            { "Attribute": "Scheming", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": -8
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["tax_corrupt"],
+          "SetFlags": [
+            "tax_corrupt"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -5 },
-            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": -3 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -5,
+              "TrustDelta": -5
+            },
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 5,
+              "TrustDelta": -3
+            }
           ]
         },
         {
@@ -232,14 +372,30 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 10 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["tax_relief"],
+          "SetFlags": [
+            "tax_relief"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -10, "TrustDelta": -3 },
-            { "NpcId": "npc_abbot", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -10,
+              "TrustDelta": -3
+            },
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         }
       ]
@@ -266,16 +422,38 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 10 },
-            { "Attribute": "Intellect", "Value": 5 },
-            { "Attribute": "Martial", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["water_project"],
+          "SetFlags": [
+            "water_project"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -25, "TrustDelta": -8 },
-            { "NpcId": "npc_governor", "FavorDelta": 10, "TrustDelta": 8 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -25,
+              "TrustDelta": -8
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            }
           ]
         },
         {
@@ -284,15 +462,34 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["water_project_partial"],
+          "SetFlags": [
+            "water_project_partial"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 5, "TrustDelta": 0 },
-            { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 5,
+              "TrustDelta": 0
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 3,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -301,12 +498,19 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -2 }
+            {
+              "Attribute": "Reputation",
+              "Value": -2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": -3, "TrustDelta": -2 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": -3,
+              "TrustDelta": -2
+            }
           ]
         }
       ]
@@ -333,13 +537,25 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 6 },
-            { "Attribute": "Reputation", "Value": 5 }
+            {
+              "Attribute": "Charisma",
+              "Value": 6
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["governor_impressed"],
+          "SetFlags": [
+            "governor_impressed"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 15, "TrustDelta": 10 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 15,
+              "TrustDelta": 10
+            }
           ]
         },
         {
@@ -348,12 +564,19 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 8, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 8,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -362,14 +585,28 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -3, "TrustDelta": 5 },
-            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -3,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         }
       ]
@@ -396,12 +633,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 2 },
-            { "Attribute": "Reputation", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 2
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["literati_friend"],
+          "SetFlags": [
+            "literati_friend"
+          ],
           "RelationshipEffects": []
         },
         {
@@ -410,11 +658,19 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["intel_gathered"],
+          "SetFlags": [
+            "intel_gathered"
+          ],
           "RelationshipEffects": []
         }
       ]
@@ -431,7 +687,9 @@
       "MinRank": "CountyMagistrate",
       "MaxRank": "Prefect",
       "RequiredFlags": [],
-      "ExcludedFlags": ["already_married"],
+      "ExcludedFlags": [
+        "already_married"
+      ],
       "RequiresMetaUnlock": false,
       "MetaUnlockId": "",
       "Choices": [
@@ -441,14 +699,31 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 4 },
-            { "Attribute": "Scheming", "Value": 2 }
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["already_married", "gentry_alliance"],
+          "SetFlags": [
+            "already_married",
+            "gentry_alliance"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 30, "TrustDelta": 20 },
-            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -3 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 30,
+              "TrustDelta": 20
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -5,
+              "TrustDelta": -3
+            }
           ]
         },
         {
@@ -457,13 +732,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -15, "TrustDelta": -5 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -15,
+              "TrustDelta": -5
+            }
           ]
         }
       ]
@@ -490,16 +775,39 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Scheming", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["impeached_zhao"],
+          "SetFlags": [
+            "impeached_zhao"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_neighbor", "FavorDelta": -30, "TrustDelta": -15 },
-            { "NpcId": "npc_censor", "FavorDelta": 10, "TrustDelta": 8 },
-            { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_neighbor",
+              "FavorDelta": -30,
+              "TrustDelta": -15
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 3,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -508,13 +816,25 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 5 },
-            { "Attribute": "Reputation", "Value": -5 }
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["zhao_deal"],
+          "SetFlags": [
+            "zhao_deal"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_neighbor", "FavorDelta": 5, "TrustDelta": -3 }
+            {
+              "NpcId": "npc_neighbor",
+              "FavorDelta": 5,
+              "TrustDelta": -3
+            }
           ]
         },
         {
@@ -523,10 +843,15 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 2 }
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["zhao_evidence_held"],
+          "SetFlags": [
+            "zhao_evidence_held"
+          ],
           "RelationshipEffects": []
         }
       ]
@@ -553,14 +878,29 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Martial", "Value": 5 },
-            { "Attribute": "Reputation", "Value": -5 },
-            { "Attribute": "Health", "Value": -5 }
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            },
+            {
+              "Attribute": "Health",
+              "Value": -5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["rebellion_crushed"],
+          "SetFlags": [
+            "rebellion_crushed"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -569,15 +909,34 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 18,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 15 },
-            { "Attribute": "Charisma", "Value": 8 },
-            { "Attribute": "Health", "Value": -10 }
+            {
+              "Attribute": "Reputation",
+              "Value": 15
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 8
+            },
+            {
+              "Attribute": "Health",
+              "Value": -10
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["rebellion_pacified"],
+          "SetFlags": [
+            "rebellion_pacified"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 10, "TrustDelta": 10 },
-            { "NpcId": "npc_abbot", "FavorDelta": 10, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 10,
+              "TrustDelta": 10
+            },
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -586,13 +945,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -8 },
-            { "Attribute": "Martial", "Value": -3 }
+            {
+              "Attribute": "Reputation",
+              "Value": -8
+            },
+            {
+              "Attribute": "Martial",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -10, "TrustDelta": -5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -10,
+              "TrustDelta": -5
+            }
           ]
         }
       ]
@@ -619,15 +988,33 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Health", "Value": -5 },
-            { "Attribute": "Martial", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Health",
+              "Value": -5
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["locust_fought"],
+          "SetFlags": [
+            "locust_fought"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_registrar", "FavorDelta": 5, "TrustDelta": 8 }
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 5,
+              "TrustDelta": 8
+            }
           ]
         },
         {
@@ -636,13 +1023,23 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 15, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 15,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -651,14 +1048,29 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 6 },
-            { "Attribute": "Intellect", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 6
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["grain_purchased"],
+          "SetFlags": [
+            "grain_purchased"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_neighbor", "FavorDelta": -5, "TrustDelta": 0 }
+            {
+              "NpcId": "npc_neighbor",
+              "FavorDelta": -5,
+              "TrustDelta": 0
+            }
           ]
         }
       ]
@@ -685,13 +1097,25 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["inspection_clean"],
+          "SetFlags": [
+            "inspection_clean"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": 10, "TrustDelta": 15 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 10,
+              "TrustDelta": 15
+            }
           ]
         },
         {
@@ -700,13 +1124,23 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Reputation", "Value": -3 }
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": -5, "TrustDelta": -5 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -5,
+              "TrustDelta": -5
+            }
           ]
         },
         {
@@ -715,13 +1149,23 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 3 },
-            { "Attribute": "Scheming", "Value": 2 }
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": -2 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 3,
+              "TrustDelta": -2
+            }
           ]
         }
       ]
@@ -748,15 +1192,34 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 15 },
-            { "Attribute": "Intellect", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 15
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["exam_fair"],
+          "SetFlags": [
+            "exam_fair"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -20, "TrustDelta": -5 },
-            { "NpcId": "npc_censor", "FavorDelta": 15, "TrustDelta": 15 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -20,
+              "TrustDelta": -5
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 15,
+              "TrustDelta": 15
+            }
           ]
         },
         {
@@ -765,14 +1228,30 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -10 },
-            { "Attribute": "Scheming", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": -10
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["exam_corrupt"],
+          "SetFlags": [
+            "exam_corrupt"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 15, "TrustDelta": 5 },
-            { "NpcId": "npc_censor", "FavorDelta": -15, "TrustDelta": -10 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 15,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -15,
+              "TrustDelta": -10
+            }
           ]
         }
       ]
@@ -799,16 +1278,38 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 10 },
-            { "Attribute": "Martial", "Value": 3 },
-            { "Attribute": "Health", "Value": -8 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 3
+            },
+            {
+              "Attribute": "Health",
+              "Value": -8
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["plague_contained"],
+          "SetFlags": [
+            "plague_contained"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -10, "TrustDelta": -3 },
-            { "NpcId": "npc_abbot", "FavorDelta": 10, "TrustDelta": 10 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -10,
+              "TrustDelta": -3
+            },
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 10,
+              "TrustDelta": 10
+            }
           ]
         },
         {
@@ -817,13 +1318,23 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 15, "TrustDelta": 10 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 15,
+              "TrustDelta": 10
+            }
           ]
         },
         {
@@ -832,13 +1343,25 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -15 },
-            { "Attribute": "Scheming", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": -15
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["plague_covered_up"],
+          "SetFlags": [
+            "plague_covered_up"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": -20, "TrustDelta": -12 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -20,
+              "TrustDelta": -12
+            }
           ]
         }
       ]
@@ -865,14 +1388,30 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["investigating_registrar"],
+          "SetFlags": [
+            "investigating_registrar"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": 10, "TrustDelta": 10 },
-            { "NpcId": "npc_registrar", "FavorDelta": 0, "TrustDelta": -3 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 10,
+              "TrustDelta": 10
+            },
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 0,
+              "TrustDelta": -3
+            }
           ]
         },
         {
@@ -881,13 +1420,24 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": -5, "TrustDelta": -4 },
-            { "NpcId": "npc_registrar", "FavorDelta": 3, "TrustDelta": 0 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": -5,
+              "TrustDelta": -4
+            },
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 3,
+              "TrustDelta": 0
+            }
           ]
         },
         {
@@ -896,14 +1446,30 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 5 },
-            { "Attribute": "Charisma", "Value": -3 }
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["deputy_betrayed"],
+          "SetFlags": [
+            "deputy_betrayed"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": -20, "TrustDelta": -12 },
-            { "NpcId": "npc_registrar", "FavorDelta": 10, "TrustDelta": -5 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": -20,
+              "TrustDelta": -12
+            },
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 10,
+              "TrustDelta": -5
+            }
           ]
         }
       ]
@@ -930,15 +1496,33 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Martial", "Value": 5 },
-            { "Attribute": "Reputation", "Value": 10 },
-            { "Attribute": "Health", "Value": -8 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            },
+            {
+              "Attribute": "Health",
+              "Value": -8
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["bandit_cleared"],
+          "SetFlags": [
+            "bandit_cleared"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 8, "TrustDelta": 8 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 8,
+              "TrustDelta": 8
+            }
           ]
         },
         {
@@ -947,12 +1531,23 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 5 },
-            { "Attribute": "Martial", "Value": 2 },
-            { "Attribute": "Reputation", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 2
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["bandit_recruited"],
+          "SetFlags": [
+            "bandit_recruited"
+          ],
           "RelationshipEffects": []
         },
         {
@@ -961,12 +1556,19 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -3 }
+            {
+              "Attribute": "Reputation",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -3 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -5,
+              "TrustDelta": -3
+            }
           ]
         }
       ]
@@ -993,13 +1595,25 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["temple_donor"],
+          "SetFlags": [
+            "temple_donor"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 15, "TrustDelta": 10 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 15,
+              "TrustDelta": 10
+            }
           ]
         },
         {
@@ -1008,12 +1622,19 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 3, "TrustDelta": 0 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 3,
+              "TrustDelta": 0
+            }
           ]
         }
       ]
@@ -1030,7 +1651,9 @@
       "MinRank": "CountyMagistrate",
       "MaxRank": "Prefect",
       "RequiredFlags": [],
-      "ExcludedFlags": ["school_built"],
+      "ExcludedFlags": [
+        "school_built"
+      ],
       "RequiresMetaUnlock": false,
       "MetaUnlockId": "",
       "Choices": [
@@ -1040,15 +1663,34 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 10 },
-            { "Attribute": "Intellect", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["school_built"],
+          "SetFlags": [
+            "school_built"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 5 },
-            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1057,14 +1699,29 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["school_built"],
+          "SetFlags": [
+            "school_built"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 10, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            }
           ]
         }
       ]
@@ -1091,13 +1748,26 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 18,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 8 },
-            { "Attribute": "Health", "Value": -5 }
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            },
+            {
+              "Attribute": "Health",
+              "Value": -5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["investigating_governor", "imperial_agent"],
+          "SetFlags": [
+            "investigating_governor",
+            "imperial_agent"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 0, "TrustDelta": 0 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 0,
+              "TrustDelta": 0
+            }
           ]
         },
         {
@@ -1106,13 +1776,25 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -10 },
-            { "Attribute": "Scheming", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": -10
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["betrayed_emperor"],
+          "SetFlags": [
+            "betrayed_emperor"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 25, "TrustDelta": 20 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 25,
+              "TrustDelta": 20
+            }
           ]
         },
         {
@@ -1121,11 +1803,19 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 20,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 10 },
-            { "Attribute": "Health", "Value": -3 }
+            {
+              "Attribute": "Scheming",
+              "Value": 10
+            },
+            {
+              "Attribute": "Health",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["double_agent"],
+          "SetFlags": [
+            "double_agent"
+          ],
           "RelationshipEffects": []
         }
       ]
@@ -1152,15 +1842,32 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 5 },
-            { "NpcId": "npc_neighbor", "FavorDelta": -5, "TrustDelta": -3 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 3,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_neighbor",
+              "FavorDelta": -5,
+              "TrustDelta": -3
+            }
           ]
         },
         {
@@ -1169,13 +1876,25 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 5 },
-            { "Attribute": "Reputation", "Value": -3 }
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["counter_attack_zhao"],
+          "SetFlags": [
+            "counter_attack_zhao"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_neighbor", "FavorDelta": -20, "TrustDelta": -8 }
+            {
+              "NpcId": "npc_neighbor",
+              "FavorDelta": -20,
+              "TrustDelta": -8
+            }
           ]
         },
         {
@@ -1184,13 +1903,23 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 4 },
-            { "Attribute": "Reputation", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 8 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 8
+            }
           ]
         }
       ]
@@ -1217,15 +1946,34 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["granary_investigated"],
+          "SetFlags": [
+            "granary_investigated"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_registrar", "FavorDelta": -15, "TrustDelta": -5 },
-            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 8 }
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": -15,
+              "TrustDelta": -5
+            },
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 5,
+              "TrustDelta": 8
+            }
           ]
         },
         {
@@ -1234,12 +1982,21 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 2 }
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["granary_covered"],
+          "SetFlags": [
+            "granary_covered"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_registrar", "FavorDelta": 10, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            }
           ]
         }
       ]
@@ -1266,13 +2023,25 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": -2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": -2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["faction_reform"],
+          "SetFlags": [
+            "faction_reform"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 15, "TrustDelta": 10 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 15,
+              "TrustDelta": 10
+            }
           ]
         },
         {
@@ -1281,13 +2050,25 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["faction_conservative"],
+          "SetFlags": [
+            "faction_conservative"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -15, "TrustDelta": -5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -15,
+              "TrustDelta": -5
+            }
           ]
         },
         {
@@ -1296,12 +2077,21 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -2 }
+            {
+              "Attribute": "Reputation",
+              "Value": -2
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["faction_neutral"],
+          "SetFlags": [
+            "faction_neutral"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": -5, "TrustDelta": -2 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -5,
+              "TrustDelta": -2
+            }
           ]
         }
       ]
@@ -1328,12 +2118,23 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Martial", "Value": 5 },
-            { "Attribute": "Reputation", "Value": 3 },
-            { "Attribute": "Health", "Value": -5 }
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Health",
+              "Value": -5
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["assassin_hunted"],
+          "SetFlags": [
+            "assassin_hunted"
+          ],
           "RelationshipEffects": []
         },
         {
@@ -1342,11 +2143,19 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 18,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 8 },
-            { "Attribute": "Health", "Value": -3 }
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            },
+            {
+              "Attribute": "Health",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["assassin_traced"],
+          "SetFlags": [
+            "assassin_traced"
+          ],
           "RelationshipEffects": []
         },
         {
@@ -1355,7 +2164,10 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Health", "Value": 3 }
+            {
+              "Attribute": "Health",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -1385,14 +2197,30 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Intellect", "Value": 5 },
-            { "Attribute": "Reputation", "Value": 3 }
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["mine_opened"],
+          "SetFlags": [
+            "mine_opened"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": -25, "TrustDelta": -10 },
-            { "NpcId": "npc_governor", "FavorDelta": 8, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": -25,
+              "TrustDelta": -10
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1401,13 +2229,25 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["mine_shared"],
+          "SetFlags": [
+            "mine_shared"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1416,11 +2256,19 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 18,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 5 },
-            { "Attribute": "Reputation", "Value": -10 }
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -10
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["mine_secret"],
+          "SetFlags": [
+            "mine_secret"
+          ],
           "RelationshipEffects": []
         }
       ]
@@ -1447,13 +2295,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 6 },
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Reputation",
+              "Value": 6
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1462,8 +2320,14 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 5,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -2 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": -2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -1493,14 +2357,27 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_registrar", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1509,8 +2386,14 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Reputation",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -1540,14 +2423,27 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -3, "TrustDelta": 0 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -3,
+              "TrustDelta": 0
+            }
           ]
         },
         {
@@ -1556,13 +2452,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Reputation",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 5, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 5,
+              "TrustDelta": 3
+            }
           ]
         }
       ]
@@ -1589,14 +2495,30 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Charisma", "Value": 6 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 6
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["orphanage_built"],
+          "SetFlags": [
+            "orphanage_built"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 10, "TrustDelta": 8 },
-            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 3,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -1605,13 +2527,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 8, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
           ]
         }
       ]
@@ -1638,13 +2570,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 6 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 6
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1653,14 +2595,27 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 3 },
-            { "Attribute": "Intellect", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 3, "TrustDelta": 2 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 3,
+              "TrustDelta": 2
+            }
           ]
         }
       ]
@@ -1687,15 +2642,31 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 5,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Martial", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 4 },
-            { "Attribute": "Health", "Value": -3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            },
+            {
+              "Attribute": "Health",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1704,8 +2675,14 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -1735,12 +2712,19 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 8,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": 10, "TrustDelta": 8 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            }
           ]
         },
         {
@@ -1749,12 +2733,19 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 5,
+              "TrustDelta": 3
+            }
           ]
         }
       ]
@@ -1781,13 +2772,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 2 },
-            { "Attribute": "Reputation", "Value": -3 }
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": -3, "TrustDelta": -3 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -3,
+              "TrustDelta": -3
+            }
           ]
         },
         {
@@ -1796,13 +2797,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1811,8 +2822,14 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -1842,13 +2859,23 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 5,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": 3, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 3,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1857,12 +2884,19 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -2 }
+            {
+              "Attribute": "Reputation",
+              "Value": -2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": -3, "TrustDelta": -2 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": -3,
+              "TrustDelta": -2
+            }
           ]
         }
       ]
@@ -1889,14 +2923,27 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 3 },
-            { "Attribute": "Reputation", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 3,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -1905,7 +2952,10 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -1935,12 +2985,19 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 8, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -1949,14 +3006,28 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Reputation",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -3, "TrustDelta": -2 },
-            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -3,
+              "TrustDelta": -2
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 3,
+              "TrustDelta": 3
+            }
           ]
         }
       ]
@@ -1983,15 +3054,32 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 5,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Charisma", "Value": 5 },
-            { "Attribute": "Health", "Value": -5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Health",
+              "Value": -5
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": 5, "TrustDelta": 5 },
-            { "NpcId": "npc_registrar", "FavorDelta": 3, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 3,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -2000,9 +3088,18 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Intellect", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -2032,14 +3129,27 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 5,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 6 },
-            { "Attribute": "Charisma", "Value": 4 },
-            { "Attribute": "Martial", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 6
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 3, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 3,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -2048,13 +3158,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 4 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 4
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_abbot", "FavorDelta": 3, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 3,
+              "TrustDelta": 3
+            }
           ]
         }
       ]
@@ -2081,13 +3201,23 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": 3, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 3,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -2096,8 +3226,14 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -2 },
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Reputation",
+              "Value": -2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -2109,8 +3245,14 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -2140,15 +3282,32 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Charisma", "Value": 4 },
-            { "Attribute": "Intellect", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": -8, "TrustDelta": -3 },
-            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -8,
+              "TrustDelta": -3
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -2157,12 +3316,19 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": -3 }
+            {
+              "Attribute": "Reputation",
+              "Value": -3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_gentry", "FavorDelta": 5, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 5,
+              "TrustDelta": 3
+            }
           ]
         }
       ]
@@ -2189,14 +3355,27 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 8 },
-            { "Attribute": "Intellect", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 5 }
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_censor", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -2205,13 +3384,23 @@
           "RequiredAttribute": "Scheming",
           "RequiredValue": 12,
           "Modifiers": [
-            { "Attribute": "Scheming", "Value": 3 },
-            { "Attribute": "Reputation", "Value": -5 }
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_neighbor", "FavorDelta": -10, "TrustDelta": -5 }
+            {
+              "NpcId": "npc_neighbor",
+              "FavorDelta": -10,
+              "TrustDelta": -5
+            }
           ]
         }
       ]
@@ -2238,14 +3427,27 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 10,
           "Modifiers": [
-            { "Attribute": "Martial", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 3 },
-            { "Attribute": "Reputation", "Value": 5 }
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_military", "FavorDelta": 10, "TrustDelta": 8 }
+            {
+              "NpcId": "npc_military",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            }
           ]
         },
         {
@@ -2254,13 +3456,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Martial", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Martial",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_military", "FavorDelta": 5, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_military",
+              "FavorDelta": 5,
+              "TrustDelta": 3
+            }
           ]
         }
       ]
@@ -2287,13 +3499,25 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 20,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 6 },
-            { "Attribute": "Reputation", "Value": 10 }
+            {
+              "Attribute": "Charisma",
+              "Value": 6
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["border_resolved"],
+          "SetFlags": [
+            "border_resolved"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 10, "TrustDelta": 8 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            }
           ]
         },
         {
@@ -2302,13 +3526,23 @@
           "RequiredAttribute": "Martial",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Martial", "Value": 5 },
-            { "Attribute": "Reputation", "Value": 3 }
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_military", "FavorDelta": 8, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_military",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -2317,8 +3551,14 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Reputation",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -2348,13 +3588,23 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 5 },
-            { "Attribute": "Reputation", "Value": 5 }
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -2363,7 +3613,10 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -2393,14 +3646,30 @@
           "RequiredAttribute": "Charisma",
           "RequiredValue": 15,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 5 },
-            { "Attribute": "Scheming", "Value": 3 }
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            }
           ],
           "FollowUpCardId": "",
-          "SetFlags": ["alliance_formed"],
+          "SetFlags": [
+            "alliance_formed"
+          ],
           "RelationshipEffects": [
-            { "NpcId": "npc_deputy", "FavorDelta": 8, "TrustDelta": 8 },
-            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 5 }
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 8,
+              "TrustDelta": 8
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
           ]
         },
         {
@@ -2409,8 +3678,14 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 2 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 2
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -2440,13 +3715,23 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 3 },
-            { "Attribute": "Charisma", "Value": 2 }
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": [
-            { "NpcId": "npc_governor", "FavorDelta": 5, "TrustDelta": 3 }
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 3
+            }
           ]
         },
         {
@@ -2455,7 +3740,10 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Charisma", "Value": 1 }
+            {
+              "Attribute": "Charisma",
+              "Value": 1
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
@@ -2474,7 +3762,9 @@
       "MaxTurn": 0,
       "MinRank": "CountyMagistrate",
       "MaxRank": "GrandCouncilor",
-      "RequiredFlags": ["road_construction"],
+      "RequiredFlags": [
+        "road_construction"
+      ],
       "ExcludedFlags": [],
       "RequiresMetaUnlock": false,
       "MetaUnlockId": "",
@@ -2485,12 +3775,2459 @@
           "RequiredAttribute": "Intellect",
           "RequiredValue": 0,
           "Modifiers": [
-            { "Attribute": "Reputation", "Value": 5 },
-            { "Attribute": "Charisma", "Value": 4 }
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 4
+            }
           ],
           "FollowUpCardId": "",
           "SetFlags": [],
           "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_county_granary_e001",
+      "Title": "义仓之争",
+      "Description": "朝廷推行义仓制度，要求各县按户征粮储备以防灾荒。然而今年秋粮歉收，百姓交完正税已所剩无几。里正们联名上书请求缓征义仓粮，而上级催文却措辞严厉，限期十日内足额入仓。",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": false,
+      "MinTurn": 2,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "如期足额征收，不打折扣",
+          "Tooltip": "严格执行朝令，但民怨沸腾",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": -8
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "yicang_harsh"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
+          ]
+        },
+        {
+          "ChoiceText": "私下挪用官库补足缺额",
+          "Tooltip": "暗度陈仓，风险极大",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "yicang_embezzle"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 5,
+              "TrustDelta": -8
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -5,
+              "TrustDelta": -10
+            }
+          ]
+        },
+        {
+          "ChoiceText": "据实上报，请求宽限",
+          "Tooltip": "实事求是但得罪上级",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "yicang_delay"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -10,
+              "TrustDelta": -5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_county_merchant_e002",
+      "Title": "胡商案",
+      "Description": "一队粟特胡商途经本县时与本地商户发生冲突，双方各执一词。胡商自称持有鸿胪寺通关文牒，要求按蕃商律令处理；本地商户则叫嚷“非我族类”。驿站外已聚集不少看热闹的百姓。",
+      "Type": "Decision",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 3,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "依唐律秉公断案，一视同仁",
+          "Tooltip": "公正之举",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 6
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "hushang_fair"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 8
+            }
+          ]
+        },
+        {
+          "ChoiceText": "偏袒本地商户，驱逐胡商",
+          "Tooltip": "短期民心但有后患",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": -5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "hushang_expel"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -8,
+              "TrustDelta": -5
+            }
+          ]
+        },
+        {
+          "ChoiceText": "居中调停，各打五十大板",
+          "Tooltip": "和稀泥",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "hushang_mediate"
+          ],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_county_feast_e003",
+      "Title": "乡饮酒礼",
+      "Description": "一年一度的乡饮酒礼将至，按制由县令主持，宴请本县耆老贤达。这是彰显教化、笼络地方的大好时机。但今年府库吃紧，上一任留下的烂摊子还没收拾干净……",
+      "Type": "Opportunity",
+      "Rarity": "Common",
+      "Repeatable": false,
+      "MinTurn": 2,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "隆重操办，借钱也要面子",
+          "Tooltip": "大撒银子",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "feast_grand"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 8,
+              "TrustDelta": 3
+            },
+            {
+              "NpcId": "npc_abbot",
+              "FavorDelta": 5,
+              "TrustDelta": 3
+            }
+          ]
+        },
+        {
+          "ChoiceText": "从简操办，量入为出",
+          "Tooltip": "节俭务实",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 8,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 2
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "feast_modest"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
+          ]
+        },
+        {
+          "ChoiceText": "借机宣讲新政，化宴为政",
+          "Tooltip": "借题发挥",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 8
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "feast_political"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -5,
+              "TrustDelta": -3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_county_spy_e004",
+      "Title": "坊正密报",
+      "Description": "西市坊正深夜来报：城西废宅中近日频繁出入可疑人等，似有暗中铸造私钱之嫌。坊正战战兢兢，说为首之人“像是衙门里的人”。",
+      "Type": "Character",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 4,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "亲率衙役连夜突袭",
+          "Tooltip": "雷厉风行",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Health",
+              "Value": -5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "counterfeit_raid"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": -20,
+              "TrustDelta": -15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "暗中监视，收集证据",
+          "Tooltip": "稳扎稳打，后续有大戏",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "card_county_counterfeit_e005",
+          "SetFlags": [
+            "counterfeit_watch"
+          ],
+          "RelationshipEffects": []
+        },
+        {
+          "ChoiceText": "知会县丞，让他去查",
+          "Tooltip": "撒手掌柜",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "counterfeit_delegate"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": 3,
+              "TrustDelta": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_county_counterfeit_e005",
+      "Title": "私铸案发",
+      "Description": "监视数日后查明真相——私铸铜钱的幕后之人竟是主簿孙伯仁！他利用职务之便调运铜料，暗中牟取暴利。证据确凿，但孙伯仁背后站着豪绅王家，一旦动手恐怕牵连甚广。",
+      "Type": "Crisis",
+      "Rarity": "Rare",
+      "Repeatable": false,
+      "MinTurn": 5,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [
+        "counterfeit_watch"
+      ],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "铁证如山，依律严办",
+          "Tooltip": "高风险高回报",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 8,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 15
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 3
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "registrar_arrested"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": -50,
+              "TrustDelta": -50
+            },
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -20,
+              "TrustDelta": -15
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 15,
+              "TrustDelta": 15
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 10
+            }
+          ]
+        },
+        {
+          "ChoiceText": "私下施压，逼他吐出赃款",
+          "Tooltip": "黑吃黑",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "registrar_blackmailed"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": -10,
+              "TrustDelta": -30
+            }
+          ]
+        },
+        {
+          "ChoiceText": "按下不表，留作日后筹码",
+          "Tooltip": "留一手",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "registrar_leverage"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_registrar",
+              "FavorDelta": 5,
+              "TrustDelta": -20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_county_land_e006",
+      "Title": "均田纠纷",
+      "Description": "均田令下，本县需重新丈量土地、编定户籍。然而豪族隐田瞒户成风，王家名下登记三百亩，实际恐怕不下千亩。丈量到王家地界时，佃农们目光闪烁，无人敢说实话。",
+      "Type": "Decision",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 4,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "Prefect",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "严格丈量，据实登记",
+          "Tooltip": "触动豪族命脉",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 12
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "land_survey_strict"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -30,
+              "TrustDelta": -20
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 8,
+              "TrustDelta": 10
+            }
+          ]
+        },
+        {
+          "ChoiceText": "与王家私下协商，各退一步",
+          "Tooltip": "妥协维稳",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "land_survey_compromise"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": -3,
+              "TrustDelta": -3
+            }
+          ]
+        },
+        {
+          "ChoiceText": "敷衍了事，按旧册抄录",
+          "Tooltip": "最安全也最无能",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 2
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "land_survey_fake"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 5,
+              "TrustDelta": 3
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -10,
+              "TrustDelta": -15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_prefect_army_e007",
+      "Title": "藩镇军饷",
+      "Description": "驻军折冲府的粮饷已拖欠三月，士卒怨声载道。折冲都尉秦虎亲自登门讨要，言语间隐含威胁。而州府库银刚被调拨去修河堤……",
+      "Type": "Crisis",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 6,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "挪用河堤款项先发军饷",
+          "Tooltip": "解燃眉之急",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "army_paid_diverted"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": 15,
+              "TrustDelta": 10
+            }
+          ]
+        },
+        {
+          "ChoiceText": "向辖下各县加征临时税",
+          "Tooltip": "转嫁压力",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "emergency_tax"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
+          ]
+        },
+        {
+          "ChoiceText": "上书朝廷请拨军饷，安抚秦虎",
+          "Tooltip": "远水不解近渴",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "army_petition"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": -5,
+              "TrustDelta": -8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_prefect_canal_e008",
+      "Title": "漕运改道",
+      "Description": "转运使衙门来文：因黄河泥沙淤积，漕运将改走新渠道，途经你管辖的渭北三县。若承接漕运中转，本州商贸将迎来黄金期；但修建转运码头耗资巨大。",
+      "Type": "Decision",
+      "Rarity": "Rare",
+      "Repeatable": false,
+      "MinTurn": 7,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "全力争取，倾州之力修建码头",
+          "Tooltip": "大手笔投资",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Intellect",
+              "Value": 8
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "card_prefect_canal_crisis_e009",
+          "SetFlags": [
+            "canal_build"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            }
+          ]
+        },
+        {
+          "ChoiceText": "与邻州联合，共建共享",
+          "Tooltip": "折中稳妥",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 8
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "canal_cooperate"
+          ],
+          "RelationshipEffects": []
+        },
+        {
+          "ChoiceText": "暗中使绊，让邻州出丑",
+          "Tooltip": "阴谋",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "canal_sabotage"
+          ],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_prefect_canal_crisis_e009",
+      "Title": "漕运风波",
+      "Description": "码头建成通航不到两月，一艘漕船在辖区沉没，三千石官粮落入水底。转运使大怒。有人密报：沉船并非意外，而是有人故意凿穿船底……",
+      "Type": "Crisis",
+      "Rarity": "Rare",
+      "Repeatable": false,
+      "MinTurn": 8,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [
+        "canal_build"
+      ],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "组织打捞，同时追查凶手",
+          "Tooltip": "文武双全",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Health",
+              "Value": -8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "canal_investigated"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 8,
+              "TrustDelta": 10
+            }
+          ]
+        },
+        {
+          "ChoiceText": "自掏州库赔偿，息事宁人",
+          "Tooltip": "花钱消灾",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "canal_compensated"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": -5
+            }
+          ]
+        },
+        {
+          "ChoiceText": "栽赃邻州，反咬一口",
+          "Tooltip": "极端阴谋",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 20,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 10
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "canal_framed"
+          ],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_prefect_conscript_e010",
+      "Title": "节度使征兵",
+      "Description": "节度使府传来军令：征发本州壮丁三千人，限一月内送至幽州前线。正值农忙时节，壮丁离乡则秋粮无人收割。但抗命不遵，则是违抗军令的大罪。",
+      "Type": "Decision",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 7,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "照令征发，不折不扣",
+          "Tooltip": "服从军令",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": -12
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "conscript_full"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": 12,
+              "TrustDelta": 8
+            }
+          ]
+        },
+        {
+          "ChoiceText": "以老弱充数，暗中保护壮丁",
+          "Tooltip": "暗度陈仓",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "conscript_fake"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": -10,
+              "TrustDelta": -15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "上书陈情，请求减免名额",
+          "Tooltip": "据理力争",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "conscript_petition"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": -5,
+              "TrustDelta": -3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_prefect_exam_e011",
+      "Title": "州试舞弊案",
+      "Description": "州试放榜后，落第士子集体到州府门前喊冤，控诉今年的解元乃是考官亲侄，试卷中竟有三道题与考前泄露的秘题完全一致。此事若处理不当，恐怕会惊动朝廷。",
+      "Type": "Decision",
+      "Rarity": "Rare",
+      "Repeatable": false,
+      "MinTurn": 8,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "彻查科场，革除考官，重新开考",
+          "Tooltip": "正本清源",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 15
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "exam_purge"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 15,
+              "TrustDelta": 15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "安抚士子，暗中处理考官",
+          "Tooltip": "低调处理",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "exam_quiet"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -5,
+              "TrustDelta": -8
+            }
+          ]
+        },
+        {
+          "ChoiceText": "压下此事，以维护科举权威为名",
+          "Tooltip": "掩盖真相",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "exam_coverup"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -15,
+              "TrustDelta": -20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_prefect_salt_e012",
+      "Title": "盐铁之利",
+      "Description": "本州境内发现一处天然盐泉。按制，盐铁归朝廷专营，应即刻上报。但若暗中先行开采，收益极为可观。幕僚分成两派，争论不休。",
+      "Type": "Opportunity",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 7,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "立即上报朝廷，请求设盐监",
+          "Tooltip": "光明正大",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 8
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "salt_reported"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 10,
+              "TrustDelta": 10
+            },
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 5
+            }
+          ]
+        },
+        {
+          "ChoiceText": "先行开采三月，赚够再报",
+          "Tooltip": "先捞一把",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "salt_secret_mine"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -10,
+              "TrustDelta": -15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "与盐商合营，利益均沾",
+          "Tooltip": "官商勾结",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "salt_partnership"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_vice_debate_e013",
+      "Title": "朝堂论战",
+      "Description": "大朝会上，改革派首辅提出两税法改革。保守派群臣激烈反对。天子目光落在你身上：“卿以为如何？”",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": false,
+      "MinTurn": 10,
+      "MaxTurn": 0,
+      "MinRank": "ViceMinister",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "力挺两税法，陈述地方实情",
+          "Tooltip": "旗帜鲜明",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "support_reform"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 15,
+              "TrustDelta": 10
+            },
+            {
+              "NpcId": "npc_zhongshu_cui",
+              "FavorDelta": -15,
+              "TrustDelta": -10
+            }
+          ]
+        },
+        {
+          "ChoiceText": "附和保守派，维护祖制",
+          "Tooltip": "保守安全",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "support_tradition"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -15,
+              "TrustDelta": -10
+            },
+            {
+              "NpcId": "npc_zhongshu_cui",
+              "FavorDelta": 10,
+              "TrustDelta": 8
+            }
+          ]
+        },
+        {
+          "ChoiceText": "折中发言，各取所长",
+          "Tooltip": "高难度圆滑",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 20,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 10
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "reform_moderate"
+          ],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_vice_eunuch_e014",
+      "Title": "宦官矫诏",
+      "Description": "深夜密报：内侍省的高力借传旨之机，私自篡改了一道关于边将任免的诏书。宦官集团正在染指军权。你手中握有证据，但高力耳目遍布宫禁……",
+      "Type": "Crisis",
+      "Rarity": "Rare",
+      "Repeatable": false,
+      "MinTurn": 11,
+      "MaxTurn": 0,
+      "MinRank": "ViceMinister",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "联合御史台，公开弹劾",
+          "Tooltip": "正面对决",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 15
+            },
+            {
+              "Attribute": "Health",
+              "Value": -15
+            }
+          ],
+          "FollowUpCardId": "card_vice_coup_e015",
+          "SetFlags": [
+            "eunuch_impeached"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_eunuch",
+              "FavorDelta": -50,
+              "TrustDelta": -50
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 20,
+              "TrustDelta": 20
+            }
+          ]
+        },
+        {
+          "ChoiceText": "密奏天子，私下进言",
+          "Tooltip": "暗中行动",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 20,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 10
+            },
+            {
+              "Attribute": "Health",
+              "Value": -8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "eunuch_secret_report"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_eunuch",
+              "FavorDelta": -20,
+              "TrustDelta": -30
+            }
+          ]
+        },
+        {
+          "ChoiceText": "隐忍不发，等待时机",
+          "Tooltip": "留得青山在",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "eunuch_evidence_held"
+          ],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_vice_coup_e015",
+      "Title": "宫禁之变",
+      "Description": "弹劾奏章呈上的当夜，高力先发制人——调动神策军封锁宫门，以“清君侧”为名软禁天子。你与御史台数名官员被困在中书省，外面甲士环伺。生死就在今夜。",
+      "Type": "Crisis",
+      "Rarity": "Epic",
+      "Repeatable": false,
+      "MinTurn": 12,
+      "MaxTurn": 0,
+      "MinRank": "ViceMinister",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [
+        "eunuch_impeached"
+      ],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "联络禁军旧部，发动反击",
+          "Tooltip": "孤注一掷",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Martial",
+              "Value": 10
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 20
+            },
+            {
+              "Attribute": "Health",
+              "Value": -20
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "coup_crushed"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_eunuch",
+              "FavorDelta": -50,
+              "TrustDelta": -50
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 25,
+              "TrustDelta": 25
+            }
+          ]
+        },
+        {
+          "ChoiceText": "从密道出逃，联络外镇勤王",
+          "Tooltip": "走为上计",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            },
+            {
+              "Attribute": "Health",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "coup_escaped"
+          ],
+          "RelationshipEffects": []
+        },
+        {
+          "ChoiceText": "投降高力，以退为进",
+          "Tooltip": "卧薪尝胆？",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 20,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 12
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -20
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "coup_surrendered"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_eunuch",
+              "FavorDelta": 15,
+              "TrustDelta": -10
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -30,
+              "TrustDelta": -30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_vice_personnel_e016",
+      "Title": "吏部铨选",
+      "Description": "你奉命主持本年吏部铨选。恩师暗示安排自己人，改革派送来推荐名单，御史台检举名单中有三人涉嫌行贿买官。",
+      "Type": "Decision",
+      "Rarity": "Common",
+      "Repeatable": false,
+      "MinTurn": 10,
+      "MaxTurn": 0,
+      "MinRank": "ViceMinister",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "严格按考核选拔，不徇私情",
+          "Tooltip": "刚正不阿",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 12
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "select_fair"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 10,
+              "TrustDelta": 15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "照顾各方面子，平衡分配",
+          "Tooltip": "和事佬",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "select_balanced"
+          ],
+          "RelationshipEffects": []
+        },
+        {
+          "ChoiceText": "卖人情给改革派，换取支持",
+          "Tooltip": "政治交易",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "select_political"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -5,
+              "TrustDelta": -5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_vice_party_e017",
+      "Title": "牛李党争",
+      "Description": "朝堂上牛党与李党之争已达白热化。两党各有宰相撑腰，中间地带越来越窄。据说天子即将做出抉择，站错队的人将万劫不复。",
+      "Type": "Decision",
+      "Rarity": "Epic",
+      "Repeatable": false,
+      "MinTurn": 11,
+      "MaxTurn": 0,
+      "MinRank": "ViceMinister",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "投身牛党，赌科举派得势",
+          "Tooltip": "押注改革",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "join_niu"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 20,
+              "TrustDelta": 15
+            },
+            {
+              "NpcId": "npc_zhongshu_cui",
+              "FavorDelta": -20,
+              "TrustDelta": -15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "投身李党，赌世族派得势",
+          "Tooltip": "押注保守",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "join_li"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_zhongshu_cui",
+              "FavorDelta": 20,
+              "TrustDelta": 15
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -20,
+              "TrustDelta": -15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "两面下注，暗中脚踩两条船",
+          "Tooltip": "高难度走钢丝",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 22,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 10
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "party_double"
+          ],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_vice_lecture_e018",
+      "Title": "经筵进讲",
+      "Description": "天子诏令你在经筵上进讲《贞观政要》。这是直达天听的绝佳机会。你需要在歌功颂德和借古讽今之间拿捏分寸。",
+      "Type": "Opportunity",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 10,
+      "MaxTurn": 0,
+      "MinRank": "ViceMinister",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "借太宗纳谏之事，暗谏当今弊政",
+          "Tooltip": "以古讽今",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 20,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 15
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 10
+            },
+            {
+              "Attribute": "Health",
+              "Value": -5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "lecture_admonish"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 15,
+              "TrustDelta": 15
+            },
+            {
+              "NpcId": "npc_eunuch",
+              "FavorDelta": -15,
+              "TrustDelta": -10
+            }
+          ]
+        },
+        {
+          "ChoiceText": "中规中矩，稳扎稳打",
+          "Tooltip": "不出彩也不出错",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "lecture_safe"
+          ],
+          "RelationshipEffects": []
+        },
+        {
+          "ChoiceText": "极尽颂扬，讨天子欢心",
+          "Tooltip": "阿谀奉承",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "lecture_flatter"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -10,
+              "TrustDelta": -10
+            },
+            {
+              "NpcId": "npc_eunuch",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_universal_famine_e019",
+      "Title": "天灾人祸",
+      "Description": "辖区遭遇百年不遇的大旱，紧接着蝗灾铺天盖地。饿殍遍野，流民四起。朝廷忙于边患，赈灾拨款遥遥无期。",
+      "Type": "Crisis",
+      "Rarity": "Uncommon",
+      "Repeatable": false,
+      "MinTurn": 5,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "开常平仓，同时组织以工代赈",
+          "Tooltip": "教科书级应对",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 15
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 8
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "famine_managed"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 5,
+              "TrustDelta": 10
+            }
+          ]
+        },
+        {
+          "ChoiceText": "向富户劝捐，实为逼捐",
+          "Tooltip": "劫富济贫",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "famine_forced_donation"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_gentry",
+              "FavorDelta": -20,
+              "TrustDelta": -15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "封锁消息，防止流民涌入",
+          "Tooltip": "消极应对",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -15
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "famine_sealed"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -15,
+              "TrustDelta": -20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_universal_old_friend_e020",
+      "Title": "故人来访",
+      "Description": "一位旧日同窗找上门来。才华横溢却屡试不第，穷困潦倒。收留他或许能得一幕僚之才，但此人性情孤傲。",
+      "Type": "Character",
+      "Rarity": "Common",
+      "Repeatable": false,
+      "MinTurn": 3,
+      "MaxTurn": 0,
+      "MinRank": "CountyMagistrate",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "延为幕僚，量才录用",
+          "Tooltip": "得一才士",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Intellect",
+              "Value": 8
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "friend_hired"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_deputy",
+              "FavorDelta": -3,
+              "TrustDelta": -3
+            }
+          ]
+        },
+        {
+          "ChoiceText": "赠以盘缠，婉言相送",
+          "Tooltip": "人情周到",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 2
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [],
+          "RelationshipEffects": []
+        },
+        {
+          "ChoiceText": "举荐给他人，借花献佛",
+          "Tooltip": "人情到位",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 10,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 3
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 3
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "friend_referred"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_governor",
+              "FavorDelta": 8,
+              "TrustDelta": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_hist_anshi_h001",
+      "Title": "安史之乱爆发",
+      "Description": "天宝十四载十一月，范阳节度使安禄山以清君侧为名起兵叛乱，十五万铁骑南下。洛阳陷落、潼关失守，天子仓皇西逃。乱世降临，你将何去何从？",
+      "Type": "Crisis",
+      "Rarity": "Legendary",
+      "Repeatable": false,
+      "MinTurn": 15,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "追随天子，护驾入蜀",
+          "Tooltip": "忠心耿耿",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 0,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 10
+            },
+            {
+              "Attribute": "Martial",
+              "Value": -5
+            },
+            {
+              "Attribute": "Health",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "anshi_follow_emperor"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_fuma_zheng",
+              "FavorDelta": 20,
+              "TrustDelta": 15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "坚守辖地，组织抵抗",
+          "Tooltip": "力挽狂澜",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Martial",
+              "Value": 15
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": 20
+            },
+            {
+              "Attribute": "Health",
+              "Value": -20
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "anshi_resist"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": 25,
+              "TrustDelta": 20
+            }
+          ]
+        },
+        {
+          "ChoiceText": "审时度势，暂降叛军",
+          "Tooltip": "苟活但声名扫地",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 20,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 10
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -30
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "anshi_surrender"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -30,
+              "TrustDelta": -40
+            },
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": -30,
+              "TrustDelta": -40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_hist_keju_h002",
+      "Title": "科举改革",
+      "Description": "天子颁诏改革科举：废除公荐旧制，改由糊名阅卷。寒门拥护，世族抵制。作为朝中要员，你不可能置身事外。",
+      "Type": "Decision",
+      "Rarity": "Epic",
+      "Repeatable": false,
+      "MinTurn": 10,
+      "MaxTurn": 0,
+      "MinRank": "ViceMinister",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "全力推动改革，亲自监督施行",
+          "Tooltip": "站在历史正确一边",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 15
+            },
+            {
+              "Attribute": "Intellect",
+              "Value": 10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "keju_reform_push"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 20,
+              "TrustDelta": 15
+            },
+            {
+              "NpcId": "npc_zhongshu_cui",
+              "FavorDelta": -20,
+              "TrustDelta": -15
+            }
+          ]
+        },
+        {
+          "ChoiceText": "阳奉阴违，暗中留下操作空间",
+          "Tooltip": "两面三刀",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "keju_reform_fake"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_zhongshu_cui",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            }
+          ]
+        },
+        {
+          "ChoiceText": "上书建议渐进改革，折中推行",
+          "Tooltip": "温和路线",
+          "RequiredAttribute": "Intellect",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Intellect",
+              "Value": 5
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "keju_reform_gradual"
+          ],
+          "RelationshipEffects": []
+        }
+      ]
+    },
+    {
+      "CardId": "card_hist_fanzhen_h003",
+      "Title": "藩镇割据",
+      "Description": "河朔三镇已成事实上的独立王国。你所辖之州正处于朝廷直辖区与藩镇势力范围的交界地带。两边都在拉拢你。",
+      "Type": "Crisis",
+      "Rarity": "Epic",
+      "Repeatable": false,
+      "MinTurn": 8,
+      "MaxTurn": 0,
+      "MinRank": "Prefect",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "坚定站在朝廷一边，拒绝藩镇拉拢",
+          "Tooltip": "忠于朝廷",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 12,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 12
+            },
+            {
+              "Attribute": "Martial",
+              "Value": 5
+            },
+            {
+              "Attribute": "Health",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "fanzhen_resist"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 15,
+              "TrustDelta": 15
+            },
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": -10,
+              "TrustDelta": -8
+            }
+          ]
+        },
+        {
+          "ChoiceText": "暗中与藩镇勾连，两头下注",
+          "Tooltip": "骑墙",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 10
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "fanzhen_double"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": 10,
+              "TrustDelta": 5
+            }
+          ]
+        },
+        {
+          "ChoiceText": "效仿藩镇，壮大自己的地方势力",
+          "Tooltip": "割据一方",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Martial",
+              "Value": 10
+            },
+            {
+              "Attribute": "Scheming",
+              "Value": 8
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -15
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "fanzhen_self"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": -25,
+              "TrustDelta": -30
+            },
+            {
+              "NpcId": "npc_general",
+              "FavorDelta": 15,
+              "TrustDelta": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CardId": "card_hist_ganlu_h004",
+      "Title": "甘露之变",
+      "Description": "大和九年，天子与宰相密谋诛杀宦官仇士良。消息走漏，仇士良反扑。你在含元殿，殿外兵刃相交，宫门即将关闭。",
+      "Type": "Crisis",
+      "Rarity": "Legendary",
+      "Repeatable": false,
+      "MinTurn": 13,
+      "MaxTurn": 0,
+      "MinRank": "ViceMinister",
+      "MaxRank": "GrandCouncilor",
+      "RequiredFlags": [],
+      "ExcludedFlags": [],
+      "RequiresMetaUnlock": false,
+      "MetaUnlockId": "",
+      "Choices": [
+        {
+          "ChoiceText": "冲出宫门，逃出长安",
+          "Tooltip": "保命要紧",
+          "RequiredAttribute": "Martial",
+          "RequiredValue": 15,
+          "Modifiers": [
+            {
+              "Attribute": "Martial",
+              "Value": 8
+            },
+            {
+              "Attribute": "Health",
+              "Value": -15
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -5
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "ganlu_escaped"
+          ],
+          "RelationshipEffects": []
+        },
+        {
+          "ChoiceText": "留在殿中，与天子共进退",
+          "Tooltip": "忠烈千秋",
+          "RequiredAttribute": "Charisma",
+          "RequiredValue": 18,
+          "Modifiers": [
+            {
+              "Attribute": "Reputation",
+              "Value": 20
+            },
+            {
+              "Attribute": "Charisma",
+              "Value": 10
+            },
+            {
+              "Attribute": "Health",
+              "Value": -25
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "ganlu_loyal"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_fuma_zheng",
+              "FavorDelta": 30,
+              "TrustDelta": 25
+            }
+          ]
+        },
+        {
+          "ChoiceText": "伪装效忠宦官，暗中保护同僚",
+          "Tooltip": "暗中周旋",
+          "RequiredAttribute": "Scheming",
+          "RequiredValue": 22,
+          "Modifiers": [
+            {
+              "Attribute": "Scheming",
+              "Value": 12
+            },
+            {
+              "Attribute": "Reputation",
+              "Value": -10
+            }
+          ],
+          "FollowUpCardId": "",
+          "SetFlags": [
+            "ganlu_undercover"
+          ],
+          "RelationshipEffects": [
+            {
+              "NpcId": "npc_shence_qiu",
+              "FavorDelta": 10,
+              "TrustDelta": -5
+            },
+            {
+              "NpcId": "npc_censor",
+              "FavorDelta": 20,
+              "TrustDelta": 20
+            }
+          ]
         }
       ]
     }

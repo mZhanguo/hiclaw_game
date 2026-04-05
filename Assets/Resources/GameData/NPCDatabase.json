@@ -6,21 +6,51 @@
       "Biography": "从四品刺史，出身陇右世族，进士及第后一路平步青云。为政尚算清明，但权力欲极强，不容属下越界。好诗词，自诩风雅，暗中支持改革派。",
       "Faction": "Reformist",
       "Rank": "Prefect",
-      "Traits": ["Ambitious", "Cunning"],
+      "Traits": [
+        "Ambitious",
+        "Cunning"
+      ],
       "InitialFavor": 10,
       "InitialTrust": 5,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": 3, "TrustReaction": 5 },
-        { "ActionType": "Social", "FavorReaction": 2, "TrustReaction": 1 },
-        { "ActionType": "Intelligence", "FavorReaction": -2, "TrustReaction": -3 },
-        { "ActionType": "SelfImprove", "FavorReaction": 1, "TrustReaction": 0 },
-        { "ActionType": "Scheme", "FavorReaction": -3, "TrustReaction": -5 },
-        { "ActionType": "Rest", "FavorReaction": -1, "TrustReaction": -2 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 3,
+          "TrustReaction": 5
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 2,
+          "TrustReaction": 1
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": -2,
+          "TrustReaction": -3
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 1,
+          "TrustReaction": 0
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -3,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": -1,
+          "TrustReaction": -2
+        }
       ],
       "StartsActive": true,
       "AppearTurn": 1,
       "AppearMinRank": "CountyMagistrate",
-      "PersonalCardIds": ["card_soc_banquet_006", "card_evt_emperor_019"],
+      "PersonalCardIds": [
+        "card_soc_banquet_006",
+        "card_evt_emperor_019"
+      ],
       "AggressionWeight": 0.3,
       "AllianceWeight": 0.5,
       "BetrayalWeight": 0.15
@@ -31,21 +61,51 @@
       "Biography": "同科进士，分配到隔壁县做县令。表面客客气气，暗中处处较劲。据说背后有朝中保守派的关系，政绩平平但仕途稳健。",
       "Faction": "Conservative",
       "Rank": "CountyMagistrate",
-      "Traits": ["Cunning", "Vengeful"],
+      "Traits": [
+        "Cunning",
+        "Vengeful"
+      ],
       "InitialFavor": -5,
       "InitialTrust": -10,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": -2, "TrustReaction": -1 },
-        { "ActionType": "Social", "FavorReaction": 3, "TrustReaction": 1 },
-        { "ActionType": "Intelligence", "FavorReaction": -3, "TrustReaction": -5 },
-        { "ActionType": "SelfImprove", "FavorReaction": 0, "TrustReaction": 0 },
-        { "ActionType": "Scheme", "FavorReaction": -5, "TrustReaction": -5 },
-        { "ActionType": "Rest", "FavorReaction": 1, "TrustReaction": 0 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": -2,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 3,
+          "TrustReaction": 1
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": -3,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 0,
+          "TrustReaction": 0
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -5,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 1,
+          "TrustReaction": 0
+        }
       ],
       "StartsActive": true,
       "AppearTurn": 1,
       "AppearMinRank": "CountyMagistrate",
-      "PersonalCardIds": ["card_soc_impeach_009", "card_soc_rival_020"],
+      "PersonalCardIds": [
+        "card_soc_impeach_009",
+        "card_soc_rival_020"
+      ],
       "AggressionWeight": 0.6,
       "AllianceWeight": 0.2,
       "BetrayalWeight": 0.4
@@ -56,21 +116,50 @@
       "Biography": "年过五旬的老吏，在县衙干了二十年。为人忠厚老实，经验丰富但缺乏进取心。对上官忠心耿耿，是最可靠的左膀右臂。",
       "Faction": "Neutral",
       "Rank": "CountyMagistrate",
-      "Traits": ["Loyal", "Timid"],
+      "Traits": [
+        "Loyal",
+        "Timid"
+      ],
       "InitialFavor": 20,
       "InitialTrust": 15,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": 5, "TrustReaction": 3 },
-        { "ActionType": "Social", "FavorReaction": 1, "TrustReaction": 2 },
-        { "ActionType": "Intelligence", "FavorReaction": 0, "TrustReaction": -1 },
-        { "ActionType": "SelfImprove", "FavorReaction": 2, "TrustReaction": 1 },
-        { "ActionType": "Scheme", "FavorReaction": -3, "TrustReaction": -5 },
-        { "ActionType": "Rest", "FavorReaction": 0, "TrustReaction": 0 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 5,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 1,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": 0,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 2,
+          "TrustReaction": 1
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -3,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 0,
+          "TrustReaction": 0
+        }
       ],
       "StartsActive": true,
       "AppearTurn": 1,
       "AppearMinRank": "CountyMagistrate",
-      "PersonalCardIds": ["card_soc_deputy_015"],
+      "PersonalCardIds": [
+        "card_soc_deputy_015"
+      ],
       "AggressionWeight": 0.05,
       "AllianceWeight": 0.8,
       "BetrayalWeight": 0.02
@@ -81,21 +170,50 @@
       "Biography": "管理县中钱粮账簿的主簿，精于算计。表面恭顺，实则心思深沉，暗中与本地豪绅王家有利益往来。把持衙门的钱袋子，不可小觑。",
       "Faction": "Neutral",
       "Rank": "CountyMagistrate",
-      "Traits": ["Cunning", "Greedy"],
+      "Traits": [
+        "Cunning",
+        "Greedy"
+      ],
       "InitialFavor": 5,
       "InitialTrust": -5,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": 1, "TrustReaction": 0 },
-        { "ActionType": "Social", "FavorReaction": 3, "TrustReaction": 2 },
-        { "ActionType": "Intelligence", "FavorReaction": -5, "TrustReaction": -5 },
-        { "ActionType": "SelfImprove", "FavorReaction": 0, "TrustReaction": 0 },
-        { "ActionType": "Scheme", "FavorReaction": 2, "TrustReaction": -3 },
-        { "ActionType": "Rest", "FavorReaction": 1, "TrustReaction": 1 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 1,
+          "TrustReaction": 0
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": -5,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 0,
+          "TrustReaction": 0
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": 2,
+          "TrustReaction": -3
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 1,
+          "TrustReaction": 1
+        }
       ],
       "StartsActive": true,
       "AppearTurn": 1,
       "AppearMinRank": "CountyMagistrate",
-      "PersonalCardIds": ["card_gov_granary_021"],
+      "PersonalCardIds": [
+        "card_gov_granary_021"
+      ],
       "AggressionWeight": 0.2,
       "AllianceWeight": 0.4,
       "BetrayalWeight": 0.35
@@ -106,21 +224,52 @@
       "Biography": "本县首富，良田千顷，仆从如云。王家三代经营此地，势力盘根错节。为人精明世故，对官府既拉拢又防范。得其助力则事半功倍，与之为敌则举步维艰。",
       "Faction": "Conservative",
       "Rank": "Candidate",
-      "Traits": ["Greedy", "Cunning", "Generous"],
+      "Traits": [
+        "Greedy",
+        "Cunning",
+        "Generous"
+      ],
       "InitialFavor": 0,
       "InitialTrust": -10,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": -2, "TrustReaction": -3 },
-        { "ActionType": "Social", "FavorReaction": 5, "TrustReaction": 3 },
-        { "ActionType": "Intelligence", "FavorReaction": -5, "TrustReaction": -5 },
-        { "ActionType": "SelfImprove", "FavorReaction": 0, "TrustReaction": 0 },
-        { "ActionType": "Scheme", "FavorReaction": -3, "TrustReaction": -5 },
-        { "ActionType": "Rest", "FavorReaction": 2, "TrustReaction": 1 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": -2,
+          "TrustReaction": -3
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 5,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": -5,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 0,
+          "TrustReaction": 0
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -3,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 2,
+          "TrustReaction": 1
+        }
       ],
       "StartsActive": true,
       "AppearTurn": 1,
       "AppearMinRank": "CountyMagistrate",
-      "PersonalCardIds": ["card_soc_marriage_008", "card_gov_water_005"],
+      "PersonalCardIds": [
+        "card_soc_marriage_008",
+        "card_gov_water_005"
+      ],
       "AggressionWeight": 0.25,
       "AllianceWeight": 0.5,
       "BetrayalWeight": 0.3
@@ -131,21 +280,51 @@
       "Biography": "净慧寺住持，德高望重，在百姓中有极高威望。看似超然世外，实则对地方政事了如指掌。精通医术，乐善好施。其一言可安民心，也可煽动民变。",
       "Faction": "Neutral",
       "Rank": "Candidate",
-      "Traits": ["Righteous", "Generous"],
+      "Traits": [
+        "Righteous",
+        "Generous"
+      ],
       "InitialFavor": 10,
       "InitialTrust": 10,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": 2, "TrustReaction": 3 },
-        { "ActionType": "Social", "FavorReaction": 3, "TrustReaction": 2 },
-        { "ActionType": "Intelligence", "FavorReaction": -1, "TrustReaction": -2 },
-        { "ActionType": "SelfImprove", "FavorReaction": 5, "TrustReaction": 3 },
-        { "ActionType": "Scheme", "FavorReaction": -5, "TrustReaction": -8 },
-        { "ActionType": "Rest", "FavorReaction": 2, "TrustReaction": 1 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 2,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": -1,
+          "TrustReaction": -2
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 5,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -5,
+          "TrustReaction": -8
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 2,
+          "TrustReaction": 1
+        }
       ],
       "StartsActive": true,
       "AppearTurn": 1,
       "AppearMinRank": "CountyMagistrate",
-      "PersonalCardIds": ["card_soc_temple_017", "card_gov_mine_024"],
+      "PersonalCardIds": [
+        "card_soc_temple_017",
+        "card_gov_mine_024"
+      ],
       "AggressionWeight": 0.05,
       "AllianceWeight": 0.7,
       "BetrayalWeight": 0.05
@@ -156,21 +335,50 @@
       "Biography": "朝廷派驻的监察御史，正直刚毅，铁面无私。不畏权贵，弹劾过多名地方大员。对贪腐深恶痛绝，但也因此得罪了不少人。与他交好可保仕途安稳，被他盯上则大祸临头。",
       "Faction": "Reformist",
       "Rank": "ViceMinister",
-      "Traits": ["Righteous", "Loyal"],
+      "Traits": [
+        "Righteous",
+        "Loyal"
+      ],
       "InitialFavor": 0,
       "InitialTrust": 0,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": 5, "TrustReaction": 5 },
-        { "ActionType": "Social", "FavorReaction": -2, "TrustReaction": -1 },
-        { "ActionType": "Intelligence", "FavorReaction": 3, "TrustReaction": 3 },
-        { "ActionType": "SelfImprove", "FavorReaction": 3, "TrustReaction": 2 },
-        { "ActionType": "Scheme", "FavorReaction": -8, "TrustReaction": -10 },
-        { "ActionType": "Rest", "FavorReaction": -1, "TrustReaction": -1 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 5,
+          "TrustReaction": 5
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": -2,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": 3,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -8,
+          "TrustReaction": -10
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": -1,
+          "TrustReaction": -1
+        }
       ],
       "StartsActive": false,
       "AppearTurn": 4,
       "AppearMinRank": "CountyMagistrate",
-      "PersonalCardIds": ["card_evt_inspect_012"],
+      "PersonalCardIds": [
+        "card_evt_inspect_012"
+      ],
       "AggressionWeight": 0.4,
       "AllianceWeight": 0.6,
       "BetrayalWeight": 0.01
@@ -181,16 +389,44 @@
       "Biography": "宫中内侍，奉旨巡视地方。表面和蔼可亲，笑脸迎人，实则手眼通天，贪婪无度。朝中宦官集团的爪牙，一封密折可决人生死。",
       "Faction": "Eunuch",
       "Rank": "ViceMinister",
-      "Traits": ["Greedy", "Cunning", "Vengeful"],
+      "Traits": [
+        "Greedy",
+        "Cunning",
+        "Vengeful"
+      ],
       "InitialFavor": 0,
       "InitialTrust": -15,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": 0, "TrustReaction": -1 },
-        { "ActionType": "Social", "FavorReaction": 5, "TrustReaction": 3 },
-        { "ActionType": "Intelligence", "FavorReaction": 2, "TrustReaction": -2 },
-        { "ActionType": "SelfImprove", "FavorReaction": -1, "TrustReaction": 0 },
-        { "ActionType": "Scheme", "FavorReaction": 3, "TrustReaction": 2 },
-        { "ActionType": "Rest", "FavorReaction": 0, "TrustReaction": 0 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 0,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 5,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": 2,
+          "TrustReaction": -2
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": -1,
+          "TrustReaction": 0
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 0,
+          "TrustReaction": 0
+        }
       ],
       "StartsActive": false,
       "AppearTurn": 6,
@@ -206,16 +442,43 @@
       "Biography": "驻扎本州的武将，出身行伍，战功赫赫。为人豪爽直率，看不起文官的弯弯绕绕。手握兵权，在地方上说一不二。与他交好可保平安，但武将干政为朝廷大忌。",
       "Faction": "Military",
       "Rank": "Prefect",
-      "Traits": ["Loyal", "Ambitious"],
+      "Traits": [
+        "Loyal",
+        "Ambitious"
+      ],
       "InitialFavor": 0,
       "InitialTrust": 0,
       "Reactions": [
-        { "ActionType": "Politics", "FavorReaction": -1, "TrustReaction": 0 },
-        { "ActionType": "Social", "FavorReaction": 3, "TrustReaction": 2 },
-        { "ActionType": "Intelligence", "FavorReaction": -2, "TrustReaction": -3 },
-        { "ActionType": "SelfImprove", "FavorReaction": 3, "TrustReaction": 3 },
-        { "ActionType": "Scheme", "FavorReaction": -5, "TrustReaction": -5 },
-        { "ActionType": "Rest", "FavorReaction": -2, "TrustReaction": -1 }
+        {
+          "ActionType": "Politics",
+          "FavorReaction": -1,
+          "TrustReaction": 0
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": -2,
+          "TrustReaction": -3
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 3,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -5,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": -2,
+          "TrustReaction": -1
+        }
       ],
       "StartsActive": false,
       "AppearTurn": 3,
@@ -224,6 +487,322 @@
       "AggressionWeight": 0.2,
       "AllianceWeight": 0.5,
       "BetrayalWeight": 0.1
+    },
+    {
+      "NpcId": "npc_changshi_pei",
+      "DisplayName": "长史 裴行俭",
+      "Biography": "州长史，出身河东裴氏旁支，明经及第后在地方辗转二十余年。精通唐律，但性情极为执拗。曾一举扳倒违法的上任刺史，在州府中人人忌惮。",
+      "Faction": "Reformist",
+      "Rank": "Prefect",
+      "Traits": [
+        "Righteous",
+        "Loyal"
+      ],
+      "InitialFavor": 5,
+      "InitialTrust": -5,
+      "Reactions": [
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 3,
+          "TrustReaction": 8
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": -1,
+          "TrustReaction": -2
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": 5,
+          "TrustReaction": 5
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 2,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -8,
+          "TrustReaction": -12
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": -1,
+          "TrustReaction": -1
+        }
+      ],
+      "StartsActive": false,
+      "AppearTurn": 7,
+      "AppearMinRank": "Prefect",
+      "PersonalCardIds": [],
+      "AggressionWeight": 0.15,
+      "AllianceWeight": 0.7,
+      "BetrayalWeight": 0.01
+    },
+    {
+      "NpcId": "npc_tuanlian_han",
+      "DisplayName": "团练使 韩令坤",
+      "Biography": "团练使，出身行伍，与吐蕃边战立功。武艺超群、治军有方，瞧不起科举出身的文官。与折冲都尉秦虎是旧交。",
+      "Faction": "Military",
+      "Rank": "Prefect",
+      "Traits": [
+        "Ambitious",
+        "Loyal"
+      ],
+      "InitialFavor": 0,
+      "InitialTrust": -10,
+      "Reactions": [
+        {
+          "ActionType": "Politics",
+          "FavorReaction": -2,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": -1,
+          "TrustReaction": -2
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 5,
+          "TrustReaction": 5
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -5,
+          "TrustReaction": -8
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": -2,
+          "TrustReaction": -2
+        }
+      ],
+      "StartsActive": false,
+      "AppearTurn": 7,
+      "AppearMinRank": "Prefect",
+      "PersonalCardIds": [],
+      "AggressionWeight": 0.4,
+      "AllianceWeight": 0.4,
+      "BetrayalWeight": 0.15
+    },
+    {
+      "NpcId": "npc_zhuanyun_liu",
+      "DisplayName": "转运判官 柳如烟",
+      "Biography": "转运判官，精于财务。真实身份是宦官高力安插在地方的耳目，但她有自己的野心，并非简单的走狗。好感度和信任度经常反向变动。",
+      "Faction": "Neutral",
+      "Rank": "Prefect",
+      "Traits": [
+        "Cunning",
+        "Greedy"
+      ],
+      "InitialFavor": 15,
+      "InitialTrust": -15,
+      "Reactions": [
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 1,
+          "TrustReaction": -2
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 5,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": 2,
+          "TrustReaction": -3
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 0,
+          "TrustReaction": 0
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 1,
+          "TrustReaction": 0
+        }
+      ],
+      "StartsActive": false,
+      "AppearTurn": 8,
+      "AppearMinRank": "Prefect",
+      "PersonalCardIds": [],
+      "AggressionWeight": 0.2,
+      "AllianceWeight": 0.5,
+      "BetrayalWeight": 0.45
+    },
+    {
+      "NpcId": "npc_zhongshu_cui",
+      "DisplayName": "中书舍人 崔玄靖",
+      "Biography": "清河崔氏，五姓七望之首。才华出众但骨子里傲慢，是李党中坚力量。掌管诏令起草权，一字之差就能改变政令走向。",
+      "Faction": "Conservative",
+      "Rank": "ViceMinister",
+      "Traits": [
+        "Cunning",
+        "Ambitious"
+      ],
+      "InitialFavor": -5,
+      "InitialTrust": -15,
+      "Reactions": [
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 2,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": -3,
+          "TrustReaction": -3
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 5,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": 2,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 0,
+          "TrustReaction": -1
+        }
+      ],
+      "StartsActive": false,
+      "AppearTurn": 10,
+      "AppearMinRank": "ViceMinister",
+      "PersonalCardIds": [],
+      "AggressionWeight": 0.35,
+      "AllianceWeight": 0.3,
+      "BetrayalWeight": 0.25
+    },
+    {
+      "NpcId": "npc_shence_qiu",
+      "DisplayName": "神策军中尉 仇士良",
+      "Biography": "宦官政治的终极代表，入宫四十年，操纵过两次皇位更替。掌控禁军，对权力嗅觉超群。极端记仇，爱钱如命。",
+      "Faction": "Eunuch",
+      "Rank": "ViceMinister",
+      "Traits": [
+        "Cunning",
+        "Vengeful",
+        "Greedy"
+      ],
+      "InitialFavor": 0,
+      "InitialTrust": -20,
+      "Reactions": [
+        {
+          "ActionType": "Politics",
+          "FavorReaction": -1,
+          "TrustReaction": -2
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 5,
+          "TrustReaction": 3
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": 3,
+          "TrustReaction": -3
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": -2,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 0,
+          "TrustReaction": 0
+        }
+      ],
+      "StartsActive": false,
+      "AppearTurn": 10,
+      "AppearMinRank": "ViceMinister",
+      "PersonalCardIds": [
+        "card_hist_ganlu_h004",
+        "card_vice_eunuch_e014"
+      ],
+      "AggressionWeight": 0.5,
+      "AllianceWeight": 0.2,
+      "BetrayalWeight": 0.6
+    },
+    {
+      "NpcId": "npc_fuma_zheng",
+      "DisplayName": "驸马都尉 郑颢",
+      "Biography": "荥阳郑氏才子，状元及第被招为驸马。内心矛盾——有治世之才却因驸马身份受限。朝堂上最特殊的存在，既是天子至亲又是最孤立的局外人。",
+      "Faction": "Neutral",
+      "Rank": "ViceMinister",
+      "Traits": [
+        "Loyal",
+        "Righteous"
+      ],
+      "InitialFavor": 10,
+      "InitialTrust": 5,
+      "Reactions": [
+        {
+          "ActionType": "Politics",
+          "FavorReaction": 0,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "Social",
+          "FavorReaction": 3,
+          "TrustReaction": 2
+        },
+        {
+          "ActionType": "Intelligence",
+          "FavorReaction": 0,
+          "TrustReaction": -1
+        },
+        {
+          "ActionType": "SelfImprove",
+          "FavorReaction": 5,
+          "TrustReaction": 5
+        },
+        {
+          "ActionType": "Scheme",
+          "FavorReaction": -3,
+          "TrustReaction": -5
+        },
+        {
+          "ActionType": "Rest",
+          "FavorReaction": 2,
+          "TrustReaction": 1
+        }
+      ],
+      "StartsActive": false,
+      "AppearTurn": 11,
+      "AppearMinRank": "ViceMinister",
+      "PersonalCardIds": [],
+      "AggressionWeight": 0.05,
+      "AllianceWeight": 0.6,
+      "BetrayalWeight": 0.05
     }
   ]
 }
