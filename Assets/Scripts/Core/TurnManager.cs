@@ -210,7 +210,10 @@ namespace GuantuFucheng.Core
             // TODO: NPCRelationshipGraph.ProcessNPCActions()
 
             Debug.Log("[TurnManager] 早朝简报完成，等待玩家确认");
-            // UI层展示简报内容，玩家点击"上朝"后调用AdvancePhase()
+            // UI层通过 GameEvents.OnPhaseChanged 自动收到通知
+            // UIManager.HandlePhaseChanged → ShowMorningBriefing()
+            // MorningBriefingPanel 展示简报内容
+            // 玩家点击"上朝"后，MorningBriefingPanel 调用 AdvancePhase()
         }
 
         /// <summary>执行已分配的行动</summary>

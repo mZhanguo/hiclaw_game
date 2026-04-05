@@ -116,5 +116,20 @@ namespace GuantuFucheng.Events
         public static event Action<string> OnMetaUpgradeUnlocked;
         public static void MetaUpgradeUnlocked(string upgradeId)
             => OnMetaUpgradeUnlocked?.Invoke(upgradeId);
+
+        // ======================== UI系统 ========================
+
+        /// <summary>请求显示指定UI面板（面板名称）</summary>
+        public static event Action<string> OnShowPanelRequested;
+        public static void ShowPanelRequested(string panelName)
+            => OnShowPanelRequested?.Invoke(panelName);
+
+        /// <summary>请求关闭当前弹窗</summary>
+        public static event Action OnClosePopupRequested;
+        public static void ClosePopupRequested() => OnClosePopupRequested?.Invoke();
+
+        /// <summary>UI过渡动画完成</summary>
+        public static event Action OnUITransitionComplete;
+        public static void UITransitionComplete() => OnUITransitionComplete?.Invoke();
     }
 }
