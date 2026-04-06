@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>2048</title>
+<style>
+/* ============================================================
+   全局样式 & 自适应布局（全 vmin 单位）
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 100%; height: 100%;
+  background: #FAF8EF;
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  touch-action: none;          /* 禁止页面滚动 */
+  -webkit-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+body {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  min-height: 100vh; min-height: 100dvh;
+}
+
+/* ---------- 顶部计分栏 ---------- */
+.header {
+  display: flex; gap: 3vmin;
+  margin-bottom: 2vmin;
+}
+.score-box {
+  background: #BBADA0; color: #fff;
+  border-radius: 1vmin; padding: 1vmin 3vmin;
+  text-align: center; min-width: 18vmin;
+}
+.score-box .label { font-size: 1.8vmin; text-transform: uppercase; opacity: .7; }
+.score-box .value { font-size: 4vmin; }
+
+/* 分数弹出动画 */
+.score-pop {
+  position: absolute; top: -1.5vmin; right: 0;
+  font-size: 2.5vmin; color: #776E65;
+  animation: popUp 600ms ease forwards;
+  pointer-events: none;
+}
+@keyframes popUp {
+  0%   { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-4vmin); }
+}
+
+/* ---------- 棋盘 ---------- */
+.board-wrap {
+  position: relative;
+  width: 80vmin; height: 80vmin;
+  background: #BBADA0;
+  border-radius: 1.5vmin;
+  padding: 2vmin;
+}
+.board-bg {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 2vmin;
+  width: 100%; height: 100%;
+}
+.cell-bg {
+  border-radius: 1.2vmin;
+  background: #CDC1B4;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* 方块层 —— 绝对定位在棋盘内 */
+.tiles {
+  position: absolute;
+  top: 2vmin; left: 2vmin; right: 2vmin; bottom: 2vmin;
+}
+
+/* 单个方块 */
+.tile {
+  position: absolute;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 1.2vmin;
+  font-weight: 700;
+  transition: top 120ms ease-out, left 120ms ease-out;
+  z-index: 1;
+}
+/* 合并弹跳 */
+.tile.merge {
+  animation: mergeBounce 200ms ease;
+  z-index: 2;
+}
+@keyframes mergeBounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+/* 新块淡入 */
+.tile.new {
+  animation: newTile 150ms ease-in;
+}
+@keyframes newTile {
+  0%   { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ---------- 底部操作栏 ---------- */
+.footer {
+  display: flex; align-items: center; gap: 3vmin;
+  margin-top: 2vmin;
+}
+.pills { display: flex; gap: 1vmin; }
+.pill {
+  font-size: 4.5vmin;
+  cursor: pointer;
+  transition: filter 200ms;
+}
+.pill.used { filter: grayscale(1) opacity(0.35); cursor: default; }
+.btn-new {
+  background: #8F7A66; color: #fff; border: none;
+  font-size: 2.8vmin; font-weight: 700;
+  padding: 1.5vmin 4vmin; border-radius: 1vmin;
+  cursor: pointer;
+}
+.btn-new:active { opacity: .8; }
+
+/* ---------- 弹窗 ---------- */
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(250,248,239,0.75);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  z-index: 100;
+  opacity: 0; pointer-events: none;
+  transition: opacity 300ms;
+}
+.overlay.show { opacity: 1; pointer-events: auto; }
+.overlay h2 { font-size: 8vmin; color: #776E65; margin-bottom: 2vmin; }
+.overlay p  { font-size: 3.5vmin; color: #776E65; margin-bottom: 3vmin; }
+.overlay button {
+  background: #8F7A66; color: #fff; border: none;
+  font-size: 3vmin; font-weight: 700;
+  padding: 1.5vmin 5vmin; border-radius: 1vmin;
+  cursor: pointer; margin: 0.5vmin;
+}
+.overlay button:active { opacity: .8; }
+
+/* ---------- 撒花 Canvas ---------- */
+#confetti {
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 200;
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 顶部计分 ===== -->
+<div class="header">
+  <div class="score-box" style="position:relative">
+    <div class="label">Score</div>
+    <div class="value" id="score">0</div>
+  </div>
+  <div class="score-box">
+    <div class="label">Best</div>
+    <div class="value" id="best">0</div>
+  </div>
+</div>
+
+<!-- ===== 棋盘 ===== -->
+<div class="board-wrap">
+  <div class="board-bg" id="boardBg"></div>
+  <div class="tiles" id="tiles"></div>
+</div>
+
+<!-- ===== 底部操作 ===== -->
+<div class="footer">
+  <div class="pills" id="pills"></div>
+  <button class="btn-new" id="btnNew">🔄 新局</button>
+</div>
+
+<!-- ===== 胜负弹窗 ===== -->
+<div class="overlay" id="overlay">
+  <h2 id="olTitle"></h2>
+  <p id="olMsg"></p>
+  <div>
+    <button id="olContinue" style="display:none">继续游戏</button>
+    <button id="olRestart">再来一局</button>
+  </div>
+</div>
+
+<!-- ===== 撒花 Canvas ===== -->
+<canvas id="confetti"></canvas>
+
+<script>
+/* ============================================================
+   2048 — 单文件实现 | 码码 👨‍💻 | 2026-04-06
+   ============================================================ */
+
+// ============================
+// §1  常量 & 配色表
+// ============================
+const SIZE = 4;
+const TILE_COLORS = {
+  2:    { bg: '#EDE4DA', fg: '#776E65' },
+  4:    { bg: '#ECE0C8', fg: '#776E65' },
+  8:    { bg: '#F2B179', fg: '#FFFFFF' },
+  16:   { bg: '#F59563', fg: '#FFFFFF' },
+  32:   { bg: '#F67C5F', fg: '#FFFFFF' },
+  64:   { bg: '#F65E3B', fg: '#FFFFFF' },
+  128:  { bg: '#EDCF72', fg: '#FFFFFF' },
+  256:  { bg: '#EDCC61', fg: '#FFFFFF' },
+  512:  { bg: '#EDC850', fg: '#FFFFFF' },
+  1024: { bg: '#C080D0', fg: '#FFFFFF' },
+  2048: { bg: '#7B2FA0', fg: '#FFFFFF' },
+};
+const SUPER_COLOR = { bg: '#3C0063', fg: '#FFFFFF' };
+
+// 合并音阶频率映射（合并后的值 → 频率 Hz）
+const MERGE_FREQ = {
+  4: 261.6, 8: 293.7, 16: 329.6, 32: 349.2, 64: 392.0,
+  128: 440.0, 256: 493.9, 512: 523.3, 1024: 587.3, 2048: 659.3,
+};
+
+// ============================
+// §2  游戏状态
+// ============================
+let grid, score, bestScore, undosLeft, history, won, gameOver, animating;
+const MAX_UNDOS = 3;
+
+// DOM 引用
+const $score    = document.getElementById('score');
+const $best     = document.getElementById('best');
+const $tiles    = document.getElementById('tiles');
+const $pills    = document.getElementById('pills');
+const $overlay  = document.getElementById('overlay');
+const $olTitle  = document.getElementById('olTitle');
+const $olMsg    = document.getElementById('olMsg');
+const $olCont   = document.getElementById('olContinue');
+const $olRestart= document.getElementById('olRestart');
+
+// ============================
+// §3  初始化
+// ============================
+
+/** 构建棋盘背景格子 */
+(function buildBg() {
+  const bg = document.getElementById('boardBg');
+  for (let i = 0; i < SIZE * SIZE; i++) {
+    const d = document.createElement('div');
+    d.className = 'cell-bg';
+    bg.appendChild(d);
+  }
+})();
+
+/** 构建后悔药 UI */
+function renderPills() {
+  $pills.innerHTML = '';
+  for (let i = 0; i < MAX_UNDOS; i++) {
+    const s = document.createElement('span');
+    s.className = 'pill' + (i >= undosLeft ? ' used' : '');
+    s.textContent = '💊';
+    if (i < undosLeft) s.onclick = undo;
+    $pills.appendChild(s);
+  }
+}
+
+/** 开始新局 */
+function newGame() {
+  grid = Array.from({ length: SIZE }, () => Array(SIZE).fill(0));
+  score = 0;
+  undosLeft = MAX_UNDOS;
+  history = [];
+  won = false;
+  gameOver = false;
+  animating = false;
+  bestScore = +(localStorage.getItem('best2048') || 0);
+  $overlay.classList.remove('show');
+  spawn(); spawn();
+  renderAll();
+}
+
+// ============================
+// §4  渲染
+// ============================
+
+/** 计算方块在 tiles 容器中的 CSS left/top（百分比） */
+function posStyle(r, c) {
+  // 每格占 (100% - 3*gap) / 4，gap ≈ 2vmin 对应百分比约 2.63%
+  // 简化：用 calc
+  const pct = (i) => `calc(${i} * (100% + 2vmin) / ${SIZE} )`;
+  return { left: pct(c), top: pct(r) };
+}
+
+/** 获取方块尺寸 CSS */
+function tileSizeCSS() {
+  return `calc((100% - ${(SIZE - 1) * 2}vmin) / ${SIZE})`;
+}
+
+/** 获取字体大小 */
+function fontSize(v) {
+  if (v < 128)  return '5.5vmin';
+  if (v < 1024) return '4.5vmin';
+  return '3.5vmin';
+}
+
+/** 获取方块颜色 & 边框 */
+function tileStyle(v) {
+  const c = TILE_COLORS[v] || SUPER_COLOR;
+  let border = 'none';
+  if (v >= 2048) border = '2px solid #FFD700';
+  return { bg: c.bg, fg: c.fg, border };
+}
+
+/** 完整重绘所有方块（无动画状态切换时调用） */
+function renderAll() {
+  $tiles.innerHTML = '';
+  const sz = tileSizeCSS();
+  for (let r = 0; r < SIZE; r++) {
+    for (let c = 0; c < SIZE; c++) {
+      const v = grid[r][c];
+      if (!v) continue;
+      createTileEl(r, c, v, sz);
+    }
+  }
+  $score.textContent = score;
+  $best.textContent = bestScore;
+  renderPills();
+}
+
+/** 创建一个方块 DOM 元素 */
+function createTileEl(r, c, v, sz, extraClass) {
+  const el = document.createElement('div');
+  el.className = 'tile' + (extraClass ? ' ' + extraClass : '');
+  const { left, top } = posStyle(r, c);
+  const s = tileStyle(v);
+  Object.assign(el.style, {
+    width: sz, height: sz,
+    left, top,
+    background: s.bg, color: s.fg,
+    border: s.border,
+    fontSize: fontSize(v),
+    lineHeight: sz,
+  });
+  el.textContent = v;
+  $tiles.appendChild(el);
+  return el;
+}
+
+// ============================
+// §5  核心逻辑：移动 & 合并
+// ============================
+
+/**
+ * 执行一次移动操作。
+ * @param {number} dir  0=上 1=右 2=下 3=左
+ * @returns {boolean} 是否为有效移动
+ */
+function move(dir) {
+  // 保存快照（用于后悔药）
+  const snap = { grid: grid.map(r => [...r]), score };
+
+  let moved = false;
+  let mergedTiles = []; // 记录合并信息 {r, c, value}
+
+  // 统一处理：将行/列抽取、处理、回写
+  for (let i = 0; i < SIZE; i++) {
+    let line = extractLine(i, dir);
+    const { result, merges, changed } = processLine(line);
+    if (changed) moved = true;
+    writeLine(i, dir, result);
+    // 记录合并位置
+    merges.forEach(m => {
+      const [mr, mc] = lineIndexToRC(i, m.index, dir);
+      mergedTiles.push({ r: mr, c: mc, value: m.value });
+    });
+  }
+
+  if (!moved) return false;
+
+  // 有效移动 → 存历史
+  history = [snap]; // 只保留 1 帧
+
+  // 计分 & 音效
+  mergedTiles.forEach(m => {
+    score += m.value;
+    playMergeSound(m.value);
+  });
+  if (score > bestScore) {
+    bestScore = score;
+    localStorage.setItem('best2048', bestScore);
+  }
+
+  return { mergedTiles };
+}
+
+/** 从棋盘中按方向抽取一行/列 */
+function extractLine(idx, dir) {
+  const line = [];
+  for (let j = 0; j < SIZE; j++) {
+    const [r, c] = lineIndexToRC(idx, j, dir);
+    line.push(grid[r][c]);
+  }
+  return line;
+}
+
+/** 将处理后的行写回棋盘 */
+function writeLine(idx, dir, result) {
+  for (let j = 0; j < SIZE; j++) {
+    const [r, c] = lineIndexToRC(idx, j, dir);
+    grid[r][c] = result[j];
+  }
+}
+
+/** 行索引→棋盘坐标映射 */
+function lineIndexToRC(lineIdx, pos, dir) {
+  switch (dir) {
+    case 0: return [pos, lineIdx];           // 上：列lineIdx，从上到下
+    case 1: return [lineIdx, SIZE - 1 - pos]; // 右：行lineIdx，从右到左
+    case 2: return [SIZE - 1 - pos, lineIdx]; // 下：列lineIdx，从下到上
+    case 3: return [lineIdx, pos];            // 左：行lineIdx，从左到右
+  }
+}
+
+/**
+ * 处理一行：滑动+合并。
+ * 返回 { result, merges: [{index, value}], changed }
+ */
+function processLine(line) {
+  // 去零压缩
+  let nums = line.filter(x => x !== 0);
+  const merges = [];
+  const result = [];
+
+  // 依次合并
+  let i = 0;
+  while (i < nums.length) {
+    if (i + 1 < nums.length && nums[i] === nums[i + 1]) {
+      const merged = nums[i] * 2;
+      result.push(merged);
+      merges.push({ index: result.length - 1, value: merged });
+      i += 2;
+    } else {
+      result.push(nums[i]);
+      i++;
+    }
+  }
+  // 补零
+  while (result.length < SIZE) result.push(0);
+
+  const changed = line.some((v, idx) => v !== result[idx]);
+  return { result, merges, changed };
+}
+
+// ============================
+// §6  生成新方块 & 检查胜负
+// ============================
+
+/** 在随机空位生成新方块（90%→2，10%→4） */
+function spawn() {
+  const empty = [];
+  for (let r = 0; r < SIZE; r++)
+    for (let c = 0; c < SIZE; c++)
+      if (grid[r][c] === 0) empty.push([r, c]);
+  if (!empty.length) return null;
+  const [r, c] = empty[Math.floor(Math.random() * empty.length)];
+  grid[r][c] = Math.random() < 0.9 ? 2 : 4;
+  return { r, c, value: grid[r][c] };
+}
+
+/** 检查是否失败（无空格且无可合并） */
+function checkGameOver() {
+  for (let r = 0; r < SIZE; r++)
+    for (let c = 0; c < SIZE; c++) {
+      if (grid[r][c] === 0) return false;
+      if (c < SIZE - 1 && grid[r][c] === grid[r][c + 1]) return false;
+      if (r < SIZE - 1 && grid[r][c] === grid[r + 1][c]) return false;
+    }
+  return true;
+}
+
+/** 检查是否首次达到 2048 */
+function checkWin() {
+  if (won) return false;
+  for (let r = 0; r < SIZE; r++)
+    for (let c = 0; c < SIZE; c++)
+      if (grid[r][c] === 2048) return true;
+  return false;
+}
+
+/** 检查是否首次达到 1024 */
+let celebrated1024 = false;
+function checkCelebrate1024() {
+  if (celebrated1024) return false;
+  for (let r = 0; r < SIZE; r++)
+    for (let c = 0; c < SIZE; c++)
+      if (grid[r][c] === 1024) { celebrated1024 = true; return true; }
+  return false;
+}
+
+// ============================
+// §7  动画渲染流程
+// ============================
+
+/**
+ * 执行完整的一步：移动 → 动画 → 生成新块 → 胜负判定
+ */
+function step(dir) {
+  if (animating || gameOver) return;
+  animating = true;
+
+  const result = move(dir);
+  if (!result) { animating = false; return; }
+
+  const { mergedTiles } = result;
+
+  // 立即渲染当前状态（方块会通过 CSS transition 滑动到新位置）
+  renderAnimated(mergedTiles);
+
+  // 等待滑动动画完成后生成新块
+  setTimeout(() => {
+    // 合并弹跳已由 CSS class 触发
+
+    // 生成新方块
+    const newTile = spawn();
+    if (newTile) {
+      const sz = tileSizeCSS();
+      createTileEl(newTile.r, newTile.c, newTile.value, sz, 'new');
+    }
+
+    // 更新分数显示
+    $score.textContent = score;
+    $best.textContent = bestScore;
+    renderPills();
+
+    // 弹出加分动画
+    if (mergedTiles.length > 0) {
+      const added = mergedTiles.reduce((s, m) => s + m.value, 0);
+      showScorePop(added);
+    }
+
+    // 1024 撒花
+    if (checkCelebrate1024()) launchConfetti();
+
+    // 胜利判定
+    if (checkWin()) {
+      won = true;
+      launchConfetti();
+      setTimeout(() => showOverlay('🎉 2048!', '你赢了！最终得分: ' + score, true), 500);
+    }
+
+    // 失败判定
+    if (checkGameOver()) {
+      gameOver = true;
+      setTimeout(() => showOverlay('💀 游戏结束', '最终得分: ' + score, false), 300);
+    }
+
+    animating = false;
+  }, 140); // 略大于 120ms 滑动动画
+}
+
+/** 带动画的渲染：保留已有方块并让 CSS transition 处理滑动 */
+function renderAnimated(mergedTiles) {
+  $tiles.innerHTML = '';
+  const sz = tileSizeCSS();
+  const mergeSet = new Set(mergedTiles.map(m => m.r + ',' + m.c));
+
+  for (let r = 0; r < SIZE; r++) {
+    for (let c = 0; c < SIZE; c++) {
+      const v = grid[r][c];
+      if (!v) continue;
+      const cls = mergeSet.has(r + ',' + c) ? 'merge' : '';
+      createTileEl(r, c, v, sz, cls);
+    }
+  }
+  $score.textContent = score;
+  $best.textContent = bestScore;
+}
+
+/** 分数弹出动画 */
+function showScorePop(val) {
+  const box = $score.parentElement;
+  const pop = document.createElement('div');
+  pop.className = 'score-pop';
+  pop.textContent = '+' + val;
+  box.appendChild(pop);
+  setTimeout(() => pop.remove(), 650);
+}
+
+// ============================
+// §8  后悔药（撤销）
+// ============================
+function undo() {
+  if (undosLeft <= 0 || !history.length || animating) return;
+  const snap = history.pop();
+  grid = snap.grid;
+  score = snap.score;
+  undosLeft--;
+  gameOver = false;
+  $overlay.classList.remove('show');
+  renderAll();
+}
+
+// ============================
+// §9  弹窗
+// ============================
+function showOverlay(title, msg, canContinue) {
+  $olTitle.textContent = title;
+  $olMsg.textContent = msg;
+  $olCont.style.display = canContinue ? 'inline-block' : 'none';
+  $overlay.classList.add('show');
+}
+
+$olCont.onclick = () => {
+  $overlay.classList.remove('show');
+  // 继续游戏，不重置
+};
+
+$olRestart.onclick = () => {
+  celebrated1024 = false;
+  newGame();
+};
+
+document.getElementById('btnNew').onclick = () => {
+  celebrated1024 = false;
+  newGame();
+};
+
+// ============================
+// §10  输入系统
+// ============================
+
+// 键盘
+document.addEventListener('keydown', e => {
+  const map = {
+    ArrowUp: 0, ArrowRight: 1, ArrowDown: 2, ArrowLeft: 3,
+    w: 0, W: 0, d: 1, D: 1, s: 2, S: 2, a: 3, A: 3,
+  };
+  if (map[e.key] !== undefined) {
+    e.preventDefault();
+    step(map[e.key]);
+  }
+});
+
+// 触屏
+let touchStartX, touchStartY;
+document.addEventListener('touchstart', e => {
+  e.preventDefault();
+  const t = e.touches[0];
+  touchStartX = t.clientX;
+  touchStartY = t.clientY;
+}, { passive: false });
+
+document.addEventListener('touchend', e => {
+  e.preventDefault();
+  if (touchStartX == null) return;
+  const t = e.changedTouches[0];
+  const dx = t.clientX - touchStartX;
+  const dy = t.clientY - touchStartY;
+  touchStartX = null;
+
+  if (Math.max(Math.abs(dx), Math.abs(dy)) < 30) return; // 阈值 30px
+
+  if (Math.abs(dx) > Math.abs(dy)) {
+    step(dx > 0 ? 1 : 3); // 右 : 左
+  } else {
+    step(dy > 0 ? 2 : 0); // 下 : 上
+  }
+}, { passive: false });
+
+// ============================
+// §11  Web Audio 音效
+// ============================
+let audioCtx;
+function ensureAudio() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+}
+
+/** 播放合并音效 */
+function playMergeSound(value) {
+  try {
+    ensureAudio();
+    const freq = MERGE_FREQ[value];
+    if (!freq) return;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+    gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.08); // 80ms 衰减
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.08);
+  } catch (_) {}
+}
+
+// ============================
+// §12  撒花特效（Canvas 粒子）
+// ============================
+const confettiCanvas = document.getElementById('confetti');
+const ctx = confettiCanvas.getContext('2d');
+const CONFETTI_COLORS = ['#F65E3B', '#7B2FA0', '#FFD700', '#4CAF50', '#2196F3'];
+
+function launchConfetti() {
+  confettiCanvas.width = window.innerWidth;
+  confettiCanvas.height = window.innerHeight;
+
+  const particles = [];
+  for (let i = 0; i < 80; i++) {
+    particles.push({
+      x: Math.random() * confettiCanvas.width,
+      y: -10 - Math.random() * confettiCanvas.height * 0.3,
+      w: 4 + Math.random() * 4,
+      h: 4 + Math.random() * 4,
+      vx: (Math.random() - 0.5) * 6,
+      vy: 2 + Math.random() * 4,
+      gravity: 0.12,
+      color: CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)],
+      rotation: Math.random() * Math.PI * 2,
+      rotSpeed: (Math.random() - 0.5) * 0.2,
+    });
+  }
+
+  const start = performance.now();
+  function frame(now) {
+    if (now - start > 2000) { ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height); return; }
+    ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+    particles.forEach(p => {
+      p.vy += p.gravity;
+      p.x += p.vx;
+      p.y += p.vy;
+      p.rotation += p.rotSpeed;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+      ctx.restore();
+    });
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+// ============================
+// §13  启动
+// ============================
+newGame();
+</script>
+</body>
+</html>
