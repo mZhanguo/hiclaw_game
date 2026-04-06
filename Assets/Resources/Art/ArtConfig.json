@@ -1,0 +1,172 @@
+{
+  "NPCPortraits": [
+    {
+      "NpcId": "npc_qinhu",
+      "DisplayName": "折冲都尉 秦虎",
+      "BasePath": "Art/NPCs/npc_qinhu",
+      "Expressions": ["normal", "angry", "happy", "suspicious"]
+    },
+    {
+      "NpcId": "npc_governor",
+      "DisplayName": "刺史 韩文远",
+      "BasePath": "Art/NPCs/npc_governor",
+      "Expressions": ["normal", "angry", "pleased", "stern"]
+    },
+    {
+      "NpcId": "npc_mentor",
+      "DisplayName": "恩师 陈学儒",
+      "BasePath": "Art/NPCs/npc_mentor",
+      "Expressions": ["normal", "disappointed", "proud", "thoughtful"]
+    },
+    {
+      "NpcId": "npc_rival",
+      "DisplayName": "同科 赵嘉明",
+      "BasePath": "Art/NPCs/npc_rival",
+      "Expressions": ["normal", "smug", "angry", "scheming"]
+    },
+    {
+      "NpcId": "npc_merchant",
+      "DisplayName": "富商 钱万通",
+      "BasePath": "Art/NPCs/npc_merchant",
+      "Expressions": ["normal", "happy", "nervous", "greedy"]
+    },
+    {
+      "NpcId": "npc_eunuch",
+      "DisplayName": "宦官 李德全",
+      "BasePath": "Art/NPCs/npc_eunuch",
+      "Expressions": ["normal", "sly", "angry", "flattering"]
+    },
+    {
+      "NpcId": "npc_censor",
+      "DisplayName": "御史 魏正言",
+      "BasePath": "Art/NPCs/npc_censor",
+      "Expressions": ["normal", "righteous", "angry", "suspicious"]
+    },
+    {
+      "NpcId": "npc_princess",
+      "DisplayName": "公主 李婉清",
+      "BasePath": "Art/NPCs/npc_princess",
+      "Expressions": ["normal", "elegant", "angry", "sad"]
+    },
+    {
+      "NpcId": "npc_bandit",
+      "DisplayName": "匪首 张铁牛",
+      "BasePath": "Art/NPCs/npc_bandit",
+      "Expressions": ["normal", "fierce", "laughing"]
+    },
+    {
+      "NpcId": "npc_clerk",
+      "DisplayName": "师爷 孙有才",
+      "BasePath": "Art/NPCs/npc_clerk",
+      "Expressions": ["normal", "worried", "pleased", "scheming"]
+    }
+  ],
+  "CardIllustrations": [
+    {
+      "CardType": "Policy",
+      "BasePath": "Art/Cards/Illustrations/card_policy",
+      "Description": "政策类卡牌 - 奏折/公文意象，水墨风"
+    },
+    {
+      "CardType": "Crisis",
+      "BasePath": "Art/Cards/Illustrations/card_crisis",
+      "Description": "危机类卡牌 - 烽火/乌云意象，紧迫感"
+    },
+    {
+      "CardType": "Relationship",
+      "BasePath": "Art/Cards/Illustrations/card_relationship",
+      "Description": "人际类卡牌 - 宴饮/对弈意象，社交感"
+    },
+    {
+      "CardType": "Opportunity",
+      "BasePath": "Art/Cards/Illustrations/card_opportunity",
+      "Description": "机遇类卡牌 - 祥云/金光意象，积极感"
+    },
+    {
+      "CardType": "Military",
+      "BasePath": "Art/Cards/Illustrations/card_military",
+      "Description": "军事类卡牌 - 兵符/战旗意象，军武感"
+    },
+    {
+      "CardType": "Economic",
+      "BasePath": "Art/Cards/Illustrations/card_economic",
+      "Description": "经济类卡牌 - 算盘/铜钱意象，财政感"
+    },
+    {
+      "CardType": "Cultural",
+      "BasePath": "Art/Cards/Illustrations/card_cultural",
+      "Description": "文化类卡牌 - 书卷/琴棋意象，文雅感"
+    },
+    {
+      "CardType": "Random",
+      "BasePath": "Art/Cards/Illustrations/card_random",
+      "Description": "随机事件卡 - 骰子/风云意象"
+    }
+  ],
+  "Backgrounds": [
+    {
+      "RankStage": "CountyMagistrate",
+      "BasePath": "Art/Backgrounds/bg_county",
+      "Description": "县衙场景 - 简朴县衙大堂/后院/街道",
+      "Scenes": ["office", "court", "street", "garden"]
+    },
+    {
+      "RankStage": "CountyAssistant",
+      "BasePath": "Art/Backgrounds/bg_county",
+      "Description": "县衙场景（县丞共用县令背景）",
+      "Scenes": ["office", "court", "street"]
+    },
+    {
+      "RankStage": "Prefect",
+      "BasePath": "Art/Backgrounds/bg_prefecture",
+      "Description": "州府场景 - 气派州府衙门/议事厅/花园",
+      "Scenes": ["office", "court", "street", "garden"]
+    },
+    {
+      "RankStage": "VicePrefect",
+      "BasePath": "Art/Backgrounds/bg_prefecture",
+      "Description": "州府场景（别驾共用刺史背景）",
+      "Scenes": ["office", "court"]
+    },
+    {
+      "RankStage": "Censor",
+      "BasePath": "Art/Backgrounds/bg_court",
+      "Description": "朝堂场景 - 宏伟宫殿/御书房/朝堂",
+      "Scenes": ["office", "court", "palace", "garden"]
+    },
+    {
+      "RankStage": "Minister",
+      "BasePath": "Art/Backgrounds/bg_court",
+      "Description": "朝堂场景（尚书共用）",
+      "Scenes": ["office", "court", "palace"]
+    },
+    {
+      "RankStage": "GrandCouncilor",
+      "BasePath": "Art/Backgrounds/bg_court_grand",
+      "Description": "宰相府/朝堂大殿 - 最高规格场景",
+      "Scenes": ["office", "court", "palace", "garden", "study"]
+    }
+  ],
+  "Icons": [
+    { "Category": "Attributes", "Key": "intellect", "Path": "Art/Icons/Attributes/icon_intellect" },
+    { "Category": "Attributes", "Key": "charisma", "Path": "Art/Icons/Attributes/icon_charisma" },
+    { "Category": "Attributes", "Key": "martial", "Path": "Art/Icons/Attributes/icon_martial" },
+    { "Category": "Attributes", "Key": "reputation", "Path": "Art/Icons/Attributes/icon_reputation" },
+    { "Category": "Attributes", "Key": "loyalty", "Path": "Art/Icons/Attributes/icon_loyalty" },
+    { "Category": "Attributes", "Key": "corruption", "Path": "Art/Icons/Attributes/icon_corruption" },
+    { "Category": "Factions", "Key": "reformist", "Path": "Art/Icons/Factions/icon_reformist" },
+    { "Category": "Factions", "Key": "conservative", "Path": "Art/Icons/Factions/icon_conservative" },
+    { "Category": "Factions", "Key": "military", "Path": "Art/Icons/Factions/icon_military" },
+    { "Category": "Factions", "Key": "eunuch", "Path": "Art/Icons/Factions/icon_eunuch" },
+    { "Category": "Factions", "Key": "neutral", "Path": "Art/Icons/Factions/icon_neutral" },
+    { "Category": "Ranks", "Key": "county_magistrate", "Path": "Art/Icons/Ranks/icon_county_magistrate" },
+    { "Category": "Ranks", "Key": "prefect", "Path": "Art/Icons/Ranks/icon_prefect" },
+    { "Category": "Ranks", "Key": "censor", "Path": "Art/Icons/Ranks/icon_censor" },
+    { "Category": "Ranks", "Key": "minister", "Path": "Art/Icons/Ranks/icon_minister" },
+    { "Category": "Ranks", "Key": "grand_councilor", "Path": "Art/Icons/Ranks/icon_grand_councilor" },
+    { "Category": "UI", "Key": "action_point", "Path": "Art/Icons/UI/icon_action_point" },
+    { "Category": "UI", "Key": "favor", "Path": "Art/Icons/UI/icon_favor" },
+    { "Category": "UI", "Key": "trust", "Path": "Art/Icons/UI/icon_trust" },
+    { "Category": "UI", "Key": "turn", "Path": "Art/Icons/UI/icon_turn" }
+  ]
+}

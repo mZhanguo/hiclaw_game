@@ -1,0 +1,103 @@
+{
+  "EvaluationName": "吏部考评",
+  "Description": "每隔固定回合，吏部对官员进行考评。考评结果决定升迁、留任或贬谪。",
+  "EvaluationInterval": 4,
+  "Dimensions": [
+    {
+      "DimensionId": "governance",
+      "DisplayName": "治绩",
+      "Description": "地方治理成效，包括税收、治安、民生等",
+      "Weight": 0.30,
+      "SourceAttribute": "Intellect",
+      "PassLine": 20,
+      "ExcellentLine": 45,
+      "FailPenalty": "声望-10，降级警告",
+      "ExcellentReward": "声望+15，优先升迁"
+    },
+    {
+      "DimensionId": "reputation",
+      "DisplayName": "声望",
+      "Description": "官声民望，百姓和同僚的评价",
+      "Weight": 0.25,
+      "SourceAttribute": "Reputation",
+      "PassLine": 15,
+      "ExcellentLine": 40,
+      "FailPenalty": "被弹劾概率翻倍",
+      "ExcellentReward": "NPC好感度全体+5"
+    },
+    {
+      "DimensionId": "loyalty",
+      "DisplayName": "忠诚",
+      "Description": "对朝廷的忠诚度，是否服从上级、遵守法纪",
+      "Weight": 0.20,
+      "SourceAttribute": "Charisma",
+      "PassLine": 10,
+      "ExcellentLine": 35,
+      "FailPenalty": "上级信任度-15",
+      "ExcellentReward": "上级信任度+10"
+    },
+    {
+      "DimensionId": "capability",
+      "DisplayName": "才干",
+      "Description": "处理政务、应对危机的综合能力",
+      "Weight": 0.15,
+      "SourceAttribute": "Scheming",
+      "PassLine": 10,
+      "ExcellentLine": 30,
+      "FailPenalty": "行动点-1（持续到下次考评）",
+      "ExcellentReward": "行动点+1（持续到下次考评）"
+    },
+    {
+      "DimensionId": "health",
+      "DisplayName": "体魄",
+      "Description": "身体健康状况，能否胜任繁重公务",
+      "Weight": 0.10,
+      "SourceAttribute": "Health",
+      "PassLine": 30,
+      "ExcellentLine": 60,
+      "FailPenalty": "强制休息1回合",
+      "ExcellentReward": "行动力恢复速度+20%"
+    }
+  ],
+  "OverallRating": {
+    "Excellent": {
+      "MinScore": 80,
+      "Description": "考评卓异",
+      "Effect": "立即获得升迁资格，声望+20"
+    },
+    "Good": {
+      "MinScore": 60,
+      "Description": "考评称职",
+      "Effect": "正常留任，声望+5"
+    },
+    "Pass": {
+      "MinScore": 40,
+      "Description": "考评平常",
+      "Effect": "留任但收到警告，声望-5"
+    },
+    "Fail": {
+      "MinScore": 0,
+      "Description": "考评不称",
+      "Effect": "降职一级，声望-20，若已是最低官职则罢官（游戏结束）"
+    }
+  },
+  "ScoreFormula": "总分 = Σ(维度属性值 × 维度权重)，满分100",
+  "SpecialRules": [
+    {
+      "RuleId": "corruption_penalty",
+      "Description": "若持有贪腐相关标记（tax_corrupt, judge_corrupt等），忠诚维度分数减半"
+    },
+    {
+      "RuleId": "disaster_bonus",
+      "Description": "若成功处理天灾（disaster_relief_full, plague_contained等），治绩维度额外加20%"
+    },
+    {
+      "RuleId": "npc_recommendation",
+      "Description": "若刺史好感度≥30且信任度≥20，总分额外+10"
+    },
+    {
+      "RuleId": "censor_investigation",
+      "Description": "若监察御史信任度<-20，触发专项调查，所有维度分数-15%"
+    }
+  ]
+}

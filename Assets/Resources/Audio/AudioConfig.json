@@ -1,0 +1,188 @@
+{
+  "BGM": [
+    {
+      "Key": "main_menu",
+      "FilePath": "Audio/BGM/bgm_main_menu",
+      "Description": "主菜单背景曲 - 大气悠远的古风曲，古筝+笛子主旋律，营造官场沧桑感",
+      "DefaultVolume": 0.7
+    },
+    {
+      "Key": "morning_court",
+      "FilePath": "Audio/BGM/bgm_morning_court",
+      "Description": "早朝曲 - 庄严肃穆，编钟+鼓点，宫廷仪式感",
+      "DefaultVolume": 0.6
+    },
+    {
+      "Key": "decision",
+      "FilePath": "Audio/BGM/bgm_decision",
+      "Description": "决策阶段曲 - 沉思紧张，低沉古琴+轻缓打击乐，烘托抉择氛围",
+      "DefaultVolume": 0.5
+    },
+    {
+      "Key": "review",
+      "FilePath": "Audio/BGM/bgm_review",
+      "Description": "复盘曲 - 舒缓平和，二胡+箫，回顾反思的氛围",
+      "DefaultVolume": 0.5
+    },
+    {
+      "Key": "evaluation",
+      "FilePath": "Audio/BGM/bgm_evaluation",
+      "Description": "考评曲 - 紧张期待，渐强的鼓点+弦乐，等待结果揭晓",
+      "DefaultVolume": 0.6
+    },
+    {
+      "Key": "promotion",
+      "FilePath": "Audio/BGM/bgm_promotion",
+      "Description": "升迁短曲 - 喜庆激昂，唢呐+锣鼓，金榜题名感",
+      "DefaultVolume": 0.7
+    },
+    {
+      "Key": "demotion",
+      "FilePath": "Audio/BGM/bgm_demotion",
+      "Description": "贬官短曲 - 悲凉萧瑟，单箫独奏，落魄感",
+      "DefaultVolume": 0.6
+    },
+    {
+      "Key": "game_over",
+      "FilePath": "Audio/BGM/bgm_game_over",
+      "Description": "游戏结束曲 - 苍凉深沉，古琴缓奏，浮沉一场终成空",
+      "DefaultVolume": 0.6
+    }
+  ],
+  "SFX": [
+    {
+      "Key": "button_click",
+      "FilePath": "Audio/SFX/sfx_button_click",
+      "Description": "按钮点击 - 清脆木鱼敲击声/竹筒碰击",
+      "DefaultVolume": 0.8
+    },
+    {
+      "Key": "page_flip",
+      "FilePath": "Audio/SFX/sfx_page_flip",
+      "Description": "翻页音效 - 宣纸翻动的沙沙声",
+      "DefaultVolume": 0.7
+    },
+    {
+      "Key": "stamp",
+      "FilePath": "Audio/SFX/sfx_stamp",
+      "Description": "印章盖印 - 厚重的官印落纸声",
+      "DefaultVolume": 0.9
+    },
+    {
+      "Key": "promotion_sfx",
+      "FilePath": "Audio/SFX/sfx_promotion",
+      "Description": "升迁音效 - 短促的锣鼓喜庆声",
+      "DefaultVolume": 1.0
+    },
+    {
+      "Key": "demotion_sfx",
+      "FilePath": "Audio/SFX/sfx_demotion",
+      "Description": "贬官音效 - 低沉的铜锣声",
+      "DefaultVolume": 0.9
+    },
+    {
+      "Key": "card_draw",
+      "FilePath": "Audio/SFX/sfx_card_draw",
+      "Description": "抽卡/翻牌 - 竹简展开声",
+      "DefaultVolume": 0.7
+    },
+    {
+      "Key": "card_play",
+      "FilePath": "Audio/SFX/sfx_card_play",
+      "Description": "出牌/选择 - 奏折递上声",
+      "DefaultVolume": 0.7
+    },
+    {
+      "Key": "notification",
+      "FilePath": "Audio/SFX/sfx_notification",
+      "Description": "提示/通知 - 清脆磬声",
+      "DefaultVolume": 0.8
+    },
+    {
+      "Key": "scroll_open",
+      "FilePath": "Audio/SFX/sfx_scroll_open",
+      "Description": "卷轴展开 - 丝绸滑动声",
+      "DefaultVolume": 0.6
+    },
+    {
+      "Key": "scroll_close",
+      "FilePath": "Audio/SFX/sfx_scroll_close",
+      "Description": "卷轴收起 - 竹卷收拢声",
+      "DefaultVolume": 0.6
+    },
+    {
+      "Key": "coin",
+      "FilePath": "Audio/SFX/sfx_coin",
+      "Description": "金币/财富 - 铜钱碰撞声",
+      "DefaultVolume": 0.7
+    },
+    {
+      "Key": "relation_up",
+      "FilePath": "Audio/SFX/sfx_relation_up",
+      "Description": "关系提升 - 和弦上行音",
+      "DefaultVolume": 0.6
+    },
+    {
+      "Key": "relation_down",
+      "FilePath": "Audio/SFX/sfx_relation_down",
+      "Description": "关系下降 - 和弦下行音",
+      "DefaultVolume": 0.6
+    },
+    {
+      "Key": "crisis",
+      "FilePath": "Audio/SFX/sfx_crisis",
+      "Description": "危机事件 - 急促鼓点",
+      "DefaultVolume": 0.9
+    },
+    {
+      "Key": "turn_start",
+      "FilePath": "Audio/SFX/sfx_turn_start",
+      "Description": "回合开始 - 晨钟一声",
+      "DefaultVolume": 0.7
+    },
+    {
+      "Key": "turn_end",
+      "FilePath": "Audio/SFX/sfx_turn_end",
+      "Description": "回合结束 - 暮鼓一声",
+      "DefaultVolume": 0.7
+    }
+  ],
+  "Ambient": [
+    {
+      "Key": "brush_writing",
+      "FilePath": "Audio/Ambient/amb_brush_writing",
+      "Description": "毛笔书写 - 笔尖在宣纸上沙沙的持续环境音，水墨风核心氛围",
+      "DefaultVolume": 0.3
+    },
+    {
+      "Key": "guqin",
+      "FilePath": "Audio/Ambient/amb_guqin",
+      "Description": "古琴点缀 - 轻柔的古琴随机拨弦，作为背景氛围层",
+      "DefaultVolume": 0.25
+    },
+    {
+      "Key": "court_murmur",
+      "FilePath": "Audio/Ambient/amb_court_murmur",
+      "Description": "朝堂低语 - 大殿中群臣窃窃私语的环境音",
+      "DefaultVolume": 0.2
+    },
+    {
+      "Key": "rain",
+      "FilePath": "Audio/Ambient/amb_rain",
+      "Description": "雨声 - 屋外细雨淅沥，适合县衙/书房场景",
+      "DefaultVolume": 0.3
+    },
+    {
+      "Key": "birds",
+      "FilePath": "Audio/Ambient/amb_birds",
+      "Description": "鸟鸣 - 庭院鸟鸣，适合闲适场景",
+      "DefaultVolume": 0.2
+    },
+    {
+      "Key": "market",
+      "FilePath": "Audio/Ambient/amb_market",
+      "Description": "街市 - 远处集市人声鼎沸，适合县城场景",
+      "DefaultVolume": 0.15
+    }
+  ]
+}

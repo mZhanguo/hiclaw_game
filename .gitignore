@@ -1,0 +1,36 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+Crashlytics/
+sysinfo.txt
+*.apk
+*.aab
+*.unitypackage
+*.app
+.DS_Store
+Thumbs.db
+
+# Simulator build
+Simulator/bin/
+Simulator/obj/
